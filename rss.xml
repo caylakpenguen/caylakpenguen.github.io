@@ -7,13 +7,13 @@
  xmlns:atom="http://www.w3.org/2005/Atom"
 >
 <channel>
-<title>CaylakPenguen My Weblog</title>
+<title>CaylakPenguen Nano Blog</title>
 <atom:link href="http://caylakpenguen.github.io/rss.xml" rel="self" type="application/rss+xml" />
 <link>http://caylakpenguen.github.io</link>
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-01-27T21:17:25+02:00</dc:date>
+<dc:date>2014-01-27T23:36:33+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 
 <item>
@@ -26,7 +26,7 @@
 <description><![CDATA[Blog Senligi</p>
 Github Biz kullancilarina Ucresiz Blog Hosting Sagliyor. </p>
 Bilgilerinize ... </b>
-Detayli bilgi icin.  
+Detayli bilgi icin.  </p>
 <a href="http://pages.github.com/"> http://pages.github.com/</a>]]></description>
 
 </item>
