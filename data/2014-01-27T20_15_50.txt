@@ -6,4 +6,7 @@ FORMAT: autobr
 -----
 BODY:
 Blog Senligi
+Github Ucresiz Blog Hostingi Sagliyor. Bilgilerinize ... </b>
+
+<a href="http://pages.github.com/"> http://pages.github.com/</a>
 END-----

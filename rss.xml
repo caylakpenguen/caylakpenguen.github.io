@@ -13,7 +13,7 @@
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-01-27T20:55:55+02:00</dc:date>
+<dc:date>2014-01-27T21:10:53+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 
 <item>
@@ -23,7 +23,10 @@
 <dc:date>2014-01-27T20:15:50+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> nanoblogger-help</dc:subject>
-<description><![CDATA[Blog Senligi]]></description>
+<description><![CDATA[Blog Senligi
+Github Ucresiz Blog Hostingi Sagliyor. Bilgilerinize ... </b>
+<br /><br />
+<a href="http://pages.github.com/"> http://pages.github.com/</a>]]></description>
 
 </item>
 <item>
