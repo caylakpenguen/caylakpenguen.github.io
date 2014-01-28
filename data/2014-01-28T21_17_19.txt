@@ -1,6 +1,6 @@
-TITLE: Welcome to NanoBlogger 3.4!
+TITLE: Welcome to NanoBlogger 3.5!
 AUTHOR: n1xt3r
-DATE: Pzt Oca 27 19:50:49 EET 2014
+DATE: Sal Oca 28 21:17:19 EET 2014
 DESC: nanoblogger welcome message
 FORMAT: raw
 -----

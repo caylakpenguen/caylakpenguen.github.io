@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-        <?xml-stylesheet type="text/css" href="http://caylakpenguen.github.io/styles/feed.css"?>
-<rss version="2.0"
+<!DOCTYPE rdf:RDF [
+<!ENTITY % HTMLlat1 PUBLIC
+ "-//W3C//ENTITIES Latin 1 for XHTML//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml-lat1.ent">
+]>
+<rdf:RDF
+ xmlns="http://purl.org/rss/1.0/"
  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
  xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
  xmlns:admin="http://webns.net/mvcb/"
- xmlns:atom="http://www.w3.org/2005/Atom"
 >
-<channel>
+<channel rdf:about="http://caylakpenguen.github.io/index.xml">
 <title>CaylakPenguen Nano Blog</title>
-<atom:link href="http://caylakpenguen.github.io/rss.xml" rel="self" type="application/rss+xml" />
 <link>http://caylakpenguen.github.io</link>
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-01-28T21:28:55+02:00</dc:date>
+<dc:date>2014-01-28T21:28:53+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
-
-<item>
+<items>
+<rdf:Seq>
+<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html" />
+<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/27/github/index.html" />
+<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html" />
+</rdf:Seq>
+</items>
+</channel>
+<item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html</link>
-<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html</guid>
 <title>Linux E-Posta Haberleşme Listeleri </title>
 <dc:date>2014-01-27T23:55:40+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[<a href="http://liste.linux.org.tr/pipermail/">Türkiye Linux Kullanıcıları Derneği E-Posta Listeleri</a><br />]]></description>
-
 </item>
-<item>
+<item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/github/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/01/27/github/index.html</link>
-<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/27/github/index.html</guid>
 <title>Github </title>
 <dc:date>2014-01-27T20:15:50+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
@@ -38,11 +46,9 @@ Github Biz kullancilarina Ucresiz Blog Hosting Sagliyor. </p>
 Bilgilerinize ... </b></p>
 Detayli bilgi icin.  </p>
 <a href="http://pages.github.com/"> http://pages.github.com/</a>]]></description>
-
 </item>
-<item>
+<item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html</link>
-<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html</guid>
 <title>Welcome to NanoBlogger 3.4!</title>
 <dc:date>2014-01-27T19:50:49+02:00</dc:date>
 <dc:creator>n1xt3r</dc:creator>
@@ -76,7 +82,5 @@ submit a bug report to the
 <a href="http://sourceforge.net/tracker/?atid=635240&amp;group_id=103576&amp;func=browse">project page</a>
 over at sourceforge.net.
 </p>]]></description>
-
 </item>
-</channel>
-</rss>
+</rdf:RDF>
