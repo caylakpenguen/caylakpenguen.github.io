@@ -4,7 +4,7 @@
 # blog güncellemek için betik
 
 git add .
-git commit -m "entry"
+git commit -m "entry `date`"
 git push origin master
 
 
