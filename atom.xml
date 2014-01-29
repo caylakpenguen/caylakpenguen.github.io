@@ -7,7 +7,7 @@
 <subtitle type="html">Linux, Haber, Geliştirme</subtitle>
 <link rel="alternate" type="text/html" href="http://caylakpenguen.github.io"/>
 <link rel="self" type="application/atom+xml" href="http://caylakpenguen.github.io/atom.xml"/>
-<updated>2014-01-28T21:45:19+02:00</updated>
+<updated>2014-01-30T00:49:16+02:00</updated>
 <author>
 <name>Çaylak Penguen</name>
 <uri>http://caylakpenguen.github.io</uri>
@@ -17,6 +17,27 @@
 NanoBlogger
 </generator>
 
+<entry>
+<title type="html">Kodlama Değiştirmek </title>
+<author>
+<name>Çaylak Penguen</name>
+</author>
+<link rel="alternate" type="text/html" href="http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html"/>
+
+<id>http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html</id>
+<published>2014-01-30T00:47:02+02:00</published>
+<updated>2014-01-30T00:47:02+02:00</updated>
+<category term="linux" />
+<content type="xhtml">
+<div xmlns="http://www.w3.org/1999/xhtml">
+Text dosyalarının karakter kodlamasını değiştirmek için keyifle kullanınız:
+<pre>iconv -f utf8 -t latin5 dosya_utf8.tex > dosya_latin5.tex </pre>
+</br>
+<a href="http://cankav-tr.tumblr.com/post/72179517438/gunun-kurtar-c-s-iconv">kaynak</a>
+</div>
+</content>
+
+</entry>
 <entry>
 <title type="html">Linux E-Posta Haberleşme Listeleri </title>
 <author>
