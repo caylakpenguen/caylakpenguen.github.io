@@ -166,12 +166,12 @@ href="./index.xml"
 <!-- Toplam bölüm sayısı: 2<br /> -->
 Toplam kayıt sayısı: 4<br />
 Son kayıt: 30-Ocak-2014-Perşembe  00:47:02<br />
-Son güncelleme: 30-Ocak-2014-Perşembe  00:49:24
+Son güncelleme: 30-Ocak-2014-Perşembe  17:22:41
 		</div>
 		<div class="sidetitle">
 		</div>
 		<div class="powered">
-			Bu weblog'un arkasındakiler: vi, bash, cat, grep, sed, ve
+			Bu weblog'un arkasındakiler: nano, bash, cat, grep, sed, ve
 			<a href="http://nanoblogger.sourceforge.net">nb 3.5-RC1</a>
 		</div>
 	</div><!-- /links div -->
@@ -188,8 +188,14 @@ Son güncelleme: 30-Ocak-2014-Perşembe  00:49:24
 		<div class="item-description">
 			Text dosyalarının karakter kodlamasını değiştirmek için keyifle kullanınız:
 <pre>iconv -f utf8 -t latin5 dosya_utf8.tex > dosya_latin5.tex </pre>
-</br>
-<a href="http://cankav-tr.tumblr.com/post/72179517438/gunun-kurtar-c-s-iconv">kaynak</a>
+<br/>
+<pre>root@slax:~/test# iconv -f utf8 -t latin5 blog.conf >blog.conf.latin5
+root@slax:~/test# file *
+blog.conf:        HTML document, UTF-8 Unicode text
+blog.conf.latin5: HTML document, ISO-8859 text
+root@slax:~/test# </pre>
+
+<a href="http://cankav-tr.tumblr.com/post/72179517438/gunun-kurtar-c-s-iconv">Kaynak Sayfa</a>
 		</div>
 	</div>
 
