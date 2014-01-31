@@ -17,7 +17,7 @@
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-01-31T22:00:17+02:00</dc:date>
+<dc:date>2014-01-31T22:14:13+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 <items>
 <rdf:Seq>
@@ -44,7 +44,8 @@ Planlanan sistemler yapım aşamasında olmakla beraber bitiriş tarihi 2014 ola
 Haritada yapılması amaçlanan kablo ağlarına dair bilgi verilmemiştir. Kabloların geçtiği yerler biçimlendirilmiştir. 
 Kabloların geçtiği yerlerin fiziki konumunu tam olarak yansıtmamaktadır. 
 Daha güncel bilgiler için <a href="http://submarine-cable-map-2012.telegeography.com">submarine-cale-map.com</a> sitesini ziyaret edebilirsiniz.</p>
-<a href="http://www.bilim.org/denizalti-kablo-agi-haritasi.html">kaynak site</a>]]></description>
+<a href="http://www.bilim.org/denizalti-kablo-agi-haritasi.html">kaynak site</a><br/>
+<iframe width="640" height="360" src="//www.youtube.com/embed/Gsoo_BOwrrM?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>]]></description>
 </item>
 <item rdf:about="http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html</link>
