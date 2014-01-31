@@ -7,7 +7,7 @@
 <subtitle type="html">Linux, Haber, Geliştirme</subtitle>
 <link rel="alternate" type="text/html" href="http://caylakpenguen.github.io"/>
 <link rel="self" type="application/atom+xml" href="http://caylakpenguen.github.io/atom.xml"/>
-<updated>2014-01-31T21:31:24+02:00</updated>
+<updated>2014-01-31T22:00:12+02:00</updated>
 <author>
 <name>Çaylak Penguen</name>
 <uri>http://caylakpenguen.github.io</uri>
@@ -17,6 +17,33 @@
 NanoBlogger
 </generator>
 
+<entry>
+<title type="html">Denizaltı kablo ağı haritası.</title>
+<author>
+<name>Çaylak Penguen</name>
+</author>
+<link rel="alternate" type="text/html" href="http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html"/>
+
+<id>http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html</id>
+<published>2014-01-31T21:52:50+02:00</published>
+<updated>2014-01-31T21:52:50+02:00</updated>
+<category term="linux" />
+<content type="xhtml">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://www.bilim.org/wp-content/uploads/denizlalti-kabloagi-haritasi-2012-1.jpg"/>
+Dünyadaki İnternet veri akışının çok önemli bir kısmı kıtaları birbirine bağlayan denizaltı kablolarıyla sağlanıyor. 
+Zaman zaman ülkemizde de "kablo koptu, İnternet yavaşladı" şeklinde haberleri yapılan bu kablo ağı neye benzer, maliyeti nedir, kapasite ne kadar merak ettiniz mi?
+Burada yer alan harita, faal ve planlanan uluslararası ve Amerika’daki yerel kablo ağlarını göstermektedir.
+Faal olan kablo ağları, 31 Aralık 2011 tarihinde Ready for Service (RFS) tarafından açıklanmıştır. 
+Planlanan sistemler yapım aşamasında olmakla beraber bitiriş tarihi 2014 olarak ilan edilen kablo ağlarıdır. 
+Haritada yapılması amaçlanan kablo ağlarına dair bilgi verilmemiştir. Kabloların geçtiği yerler biçimlendirilmiştir. 
+Kabloların geçtiği yerlerin fiziki konumunu tam olarak yansıtmamaktadır. 
+Daha güncel bilgiler için <a href="http://submarine-cable-map-2012.telegeography.com">submarine-cale-map.com</a> sitesini ziyaret edebilirsiniz.</p>
+<a href="http://www.bilim.org/denizalti-kablo-agi-haritasi.html">kaynak site</a>
+</div>
+</content>
+
+</entry>
 <entry>
 <title type="html">Kodlama Değiştirmek </title>
 <author>
