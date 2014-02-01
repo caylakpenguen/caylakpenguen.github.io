@@ -1,15 +1,1 @@
-TITLE: Github 
-AUTHOR: Çaylak Penguen
-DATE: Pzt Oca 27 20:15:50 EET 2014
-DESC: 
-FORMAT: autobr
------
-BODY:
-Blog Şenliği</p>
-Github Biz kullanıcılarına Ücresiz Blog Hosting Sağlıyor. </p>
-Bilgilerinize ... </b></p>
-Detaylı bilgi için.  </p>
-<a href="http://pages.github.com/"> http://pages.github.com/</a>
-</br><p/>
-<a href="http://caylak.truvalinux.org.tr"> http://caylak.truvalinux.org.tr</a>
-END-----
+

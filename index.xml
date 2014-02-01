@@ -17,7 +17,7 @@
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-02-01T19:14:51+02:00</dc:date>
+<dc:date>2014-02-01T19:59:34+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 <items>
 <rdf:Seq>
@@ -26,7 +26,7 @@
 <rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html" />
 <rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html" />
 <rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html" />
-<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/27/github/index.html" />
+<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/27/ba_l_ks_z/index.html" />
 <rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html" />
 </rdf:Seq>
 </items>
@@ -92,19 +92,13 @@ root@slax:~/test# </pre>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[<a href="http://liste.linux.org.tr/pipermail/">Türkiye Linux Kullanıcıları Derneği E-Posta Listeleri</a><br />]]></description>
 </item>
-<item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/github/index.html">
-<link>http://caylakpenguen.github.io/archives/2014/01/27/github/index.html</link>
-<title>Github </title>
+<item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/ba_l_ks_z/index.html">
+<link>http://caylakpenguen.github.io/archives/2014/01/27/ba_l_ks_z/index.html</link>
+<title>Başlıksız</title>
 <dc:date>2014-01-27T20:15:50+02:00</dc:date>
-<dc:creator>Çaylak Penguen</dc:creator>
+<dc:creator></dc:creator>
 
-<description><![CDATA[Blog Şenliği</p>
-Github Biz kullanıcılarına Ücresiz Blog Hosting Sağlıyor. </p>
-Bilgilerinize ... </b></p>
-Detaylı bilgi için.  </p>
-<a href="http://pages.github.com/"> http://pages.github.com/</a>
-</br><p/>
-<a href="http://caylak.truvalinux.org.tr"> http://caylak.truvalinux.org.tr</a>]]></description>
+<description><![CDATA[]]></description>
 </item>
 <item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html</link>
