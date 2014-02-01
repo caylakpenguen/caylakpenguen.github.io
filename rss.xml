@@ -13,9 +13,20 @@
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-02-01T03:47:18+02:00</dc:date>
+<dc:date>2014-02-01T03:56:47+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 
+<item>
+<link>http://caylakpenguen.github.io/archives/2014/02/01/linux_videolar/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/02/01/linux_videolar/index.html</guid>
+<title>Linux Videoları </title>
+<dc:date>2014-02-01T03:56:38+02:00</dc:date>
+<dc:creator>Çaylak Penguen</dc:creator>
+<dc:subject> linux</dc:subject>
+<description><![CDATA[<a href="http://propaganda.2flub.org/video/">Linux Videoları </a> linkte Linux ile ilgili
+oldukça fazla Videolar var. İzlemenizi tavsiye ederim.]]></description>
+
+</item>
 <item>
 <link>http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html</link>
 <guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html</guid>
