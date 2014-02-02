@@ -13,7 +13,7 @@
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-02-01T19:59:38+02:00</dc:date>
+<dc:date>2014-02-02T03:30:57+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 
 <item>
@@ -88,13 +88,18 @@ root@slax:~/test# </pre>
 
 </item>
 <item>
-<link>http://caylakpenguen.github.io/archives/2014/01/27/ba_l_ks_z/index.html</link>
-<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/27/ba_l_ks_z/index.html</guid>
-<title>Başlıksız</title>
+<link>http://caylakpenguen.github.io/archives/2014/01/27/github/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/27/github/index.html</guid>
+<title>Github </title>
 <dc:date>2014-01-27T20:15:50+02:00</dc:date>
-<dc:creator></dc:creator>
+<dc:creator>Çaylak Penguen</dc:creator>
 
-<description><![CDATA[]]></description>
+<description><![CDATA[Blog Senliği.</p>
+Github Biz kullancilarina Ücresiz Blog Hosting Sağlıyor. </p>
+Bilgilerinize ... </p>
+Detayli bilgi icin.  </p>
+<a href="http://caylak.truvalinux.org.tr/news.php?readmore=29">http://caylak.truvalinux.org.tr</a> </p>
+<a href="http://pages.github.com/"> http://pages.github.com/</a>]]></description>
 
 </item>
 <item>
