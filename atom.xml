@@ -7,7 +7,7 @@
 <subtitle type="html">Linux, Haber, Geliştirme</subtitle>
 <link rel="alternate" type="text/html" href="http://caylakpenguen.github.io"/>
 <link rel="self" type="application/atom+xml" href="http://caylakpenguen.github.io/atom.xml"/>
-<updated>2014-02-02T03:30:49+02:00</updated>
+<updated>2014-02-02T03:38:46+02:00</updated>
 <author>
 <name>Çaylak Penguen</name>
 <uri>http://caylakpenguen.github.io</uri>
@@ -68,7 +68,7 @@ oldukça fazla Videolar var. İzlemenizi tavsiye ederim.
 <category term="linux" />
 <content type="xhtml">
 <div xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://www.bilim.org/wp-content/uploads/denizlalti-kabloagi-haritasi-2012-1.jpg"/>
+<img src="/images/denizlalti-kabloagi-haritasi-2012-1.jpg"/>
 Dünyadaki İnternet veri akışının çok önemli bir kısmı kıtaları birbirine bağlayan denizaltı kablolarıyla sağlanıyor. 
 Zaman zaman ülkemizde de "kablo koptu, İnternet yavaşladı" şeklinde haberleri yapılan bu kablo ağı neye benzer, maliyeti nedir, kapasite ne kadar merak ettiniz mi?
 Burada yer alan harita, faal ve planlanan uluslararası ve Amerika’daki yerel kablo ağlarını göstermektedir.
