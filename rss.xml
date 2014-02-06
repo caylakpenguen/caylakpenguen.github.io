@@ -13,7 +13,7 @@
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-02-02T04:26:43+02:00</dc:date>
+<dc:date>2014-02-06T20:50:38+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 
 <item>
@@ -23,7 +23,7 @@
 <dc:date>2014-02-01T19:12:36+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
-<description><![CDATA[Hayalimdeki Mikemmel Sistem Odası Bakınız  ->> <a href="/images/22012007050.jpg">link</a>
+<description><![CDATA[Hayalimdeki Mikemmel Sistem Odası Bakınız  ->> <a href="javascript:void(window.open('/images/22012007050.jpg','ph','width=800,height=600,menubar=yes,scrollbars=no,resizable=no'))"><Font size="-1">[link]</font></a>
 </p>Can Kavaklıoğlu 'nun Kulakları Çınlasın  :-)]]></description>
 
 </item>
@@ -45,7 +45,8 @@ oldukça fazla Videolar var. İzlemenizi tavsiye ederim.]]></description>
 <dc:date>2014-01-31T21:52:50+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
-<description><![CDATA[<img src="/images/denizlalti-kabloagi-haritasi-2012-1.jpg"/>
+<description><![CDATA[
+<a href="javascript:void(window.open('/images/denizlalti-kabloagi-haritasi-2012-1.jpg','ph','width=799,height=296,menubar=yes,scrollbars=no,resizable=no'))"><Font size="-1">[Harita]</font></a>  <br/>
 Dünyadaki İnternet veri akışının çok önemli bir kısmı kıtaları birbirine bağlayan denizaltı kablolarıyla sağlanıyor. 
 Zaman zaman ülkemizde de "kablo koptu, İnternet yavaşladı" şeklinde haberleri yapılan bu kablo ağı neye benzer, maliyeti nedir, kapasite ne kadar merak ettiniz mi?
 Burada yer alan harita, faal ve planlanan uluslararası ve Amerika’daki yerel kablo ağlarını göstermektedir.
