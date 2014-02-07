@@ -1,5 +1,5 @@
 TITLE: Sanal Disk Bölümleme işlemleri
-AUTHOR:
+AUTHOR: Çaylak Penguen
 DATE: 07-Şubat-2014-Cuma  03:46:59
 DESC: 
 FORMAT: 
@@ -70,16 +70,15 @@ root@truva:~/Disk#</pre>
 
 Buraya kadar herşey güzel, fakat şimdi sanaldisk üzerindeki bölümleri formatlamaya geldi.
 Sanal diskimizi biçimleyebilmek ve mount edebilmek için öncelikler loop devices ile eşlemek gerekli.
-sanal disk fiziksel bir çihaz olmadığı için sistem tarafından gerekli aygıtlar oluşturulmaz.
+sanal disk fiziksel bir çihaz olmadığı için sistem tarafından gerekli aygıtlar oluşturulmaz.<br/>
 Hatırlayınız Sistemimize Flash bellek taktığımızda udev tarafından gerekli aygıtlar otomatik oluşturulur  
 Örneğin.
 <pre> /dev/sdb /dev/sdb1 </pre>
-gibi.
 
 diski biçimlemek ve mount etmek için 3 yol var.
 Birincisi Qemu ile oluşturacağımız sanal sistem üzerinden biçimlemek.
-ikincisi -o loop seçeneği ile loop aygıtlari le diskin bölümlerini eşlemek.
-üçüncüsü Raid Kullanmak :) Evet Raid :)
+ikincisi -o offset değerini hesaplayıp loop aygıtlari ile diskin bölümlerini eşlemek.
+üçüncüsü Raid Kullanmak :) Evet Raid :)<br/>
 ilk iki seçeneği pas geçip üçüncüsünü anlatmak istiyorum.
 öncelikle loop74 devicesini raid yapacağız. 
 <pre> root@truva:~/Disk# mdadm --build --force caylakDisk --level linear --raid-devices 1  /dev/loop74

@@ -13,15 +13,15 @@
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-02-07T03:47:06+02:00</dc:date>
+<dc:date>2014-02-07T21:43:32+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 
 <item>
-<link>http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_bölümleme_işlemleri/index.html</link>
-<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_bölümleme_işlemleri/index.html</guid>
+<link>http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html</guid>
 <title>Sanal Disk Bölümleme işlemleri</title>
 <dc:date>2014-02-07T03:46:59+02:00</dc:date>
-<dc:creator></dc:creator>
+<dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[Sanal sabit disk ile hiç uğraştınızmı? Sanırım uğraştınız.
 Linux ile iç içe olan bir kişi olarak şahsen sıklıkla uğraşıyorum.
@@ -88,16 +88,15 @@ root@truva:~/Disk#</pre>
 
 Buraya kadar herşey güzel, fakat şimdi sanaldisk üzerindeki bölümleri formatlamaya geldi.
 Sanal diskimizi biçimleyebilmek ve mount edebilmek için öncelikler loop devices ile eşlemek gerekli.
-sanal disk fiziksel bir çihaz olmadığı için sistem tarafından gerekli aygıtlar oluşturulmaz.
+sanal disk fiziksel bir çihaz olmadığı için sistem tarafından gerekli aygıtlar oluşturulmaz.<br/>
 Hatırlayınız Sistemimize Flash bellek taktığımızda udev tarafından gerekli aygıtlar otomatik oluşturulur  
 Örneğin.
 <pre> /dev/sdb /dev/sdb1 </pre>
-gibi.
 
 diski biçimlemek ve mount etmek için 3 yol var.
 Birincisi Qemu ile oluşturacağımız sanal sistem üzerinden biçimlemek.
-ikincisi -o loop seçeneği ile loop aygıtlari le diskin bölümlerini eşlemek.
-üçüncüsü Raid Kullanmak :) Evet Raid :)
+ikincisi -o offset değerini hesaplayıp loop aygıtlari ile diskin bölümlerini eşlemek.
+üçüncüsü Raid Kullanmak :) Evet Raid :)<br/>
 ilk iki seçeneği pas geçip üçüncüsünü anlatmak istiyorum.
 öncelikle loop74 devicesini raid yapacağız. 
 <pre> root@truva:~/Disk# mdadm --build --force caylakDisk --level linear --raid-devices 1  /dev/loop74
@@ -162,8 +161,8 @@ Görüş ve eleştirilerinizi bekleriz.]]></description>
 
 </item>
 <item>
-<link>http://caylakpenguen.github.io/archives/2014/02/01/hayalimdeki_sistem_odası/index.html</link>
-<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/02/01/hayalimdeki_sistem_odası/index.html</guid>
+<link>http://caylakpenguen.github.io/archives/2014/02/01/hayalimdeki_sistem_odas/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/02/01/hayalimdeki_sistem_odas/index.html</guid>
 <title>Hayalimdeki sistem Odası </title>
 <dc:date>2014-02-01T19:12:36+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
@@ -173,8 +172,8 @@ Görüş ve eleştirilerinizi bekleriz.]]></description>
 
 </item>
 <item>
-<link>http://caylakpenguen.github.io/archives/2014/02/01/linux_videoları/index.html</link>
-<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/02/01/linux_videoları/index.html</guid>
+<link>http://caylakpenguen.github.io/archives/2014/02/01/linux_videolar/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/02/01/linux_videolar/index.html</guid>
 <title>Linux Videoları </title>
 <dc:date>2014-02-01T03:56:38+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
@@ -184,15 +183,15 @@ oldukça fazla Videolar var. İzlemenizi tavsiye ederim.]]></description>
 
 </item>
 <item>
-<link>http://caylakpenguen.github.io/archives/2014/01/31/denizaltı_kablo_ağı_haritası/index.html</link>
-<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/31/denizaltı_kablo_ağı_haritası/index.html</guid>
+<link>http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html</guid>
 <title>Denizaltı kablo ağı haritası.</title>
 <dc:date>2014-01-31T21:52:50+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[
 <a href="javascript:void(window.open('/images/denizlalti-kabloagi-haritasi-2012-5.png','ph','width=700,height=411,menubar=yes,scrollbars=no,resizable=no'))"><Font size="-1">[Harita-1]</font></a>  <br/> 
- || <a href="javascript:void(window.open('/images/denizlalti-kabloagi-haritasi-2012-1.jpg','ph','width=799,height=298,menubar=yes,scrollbars=no,resizable=no'))"><Font size="-1">[Harita-2]</font></a>  <br/> 
+<a href="javascript:void(window.open('/images/denizlalti-kabloagi-haritasi-2012-1.jpg','ph','width=799,height=298,menubar=yes,scrollbars=no,resizable=no'))"><Font size="-1">[Harita-2]</font></a>  <br/> 
 <br />
 
 Dünyadaki İnternet veri akışının çok önemli bir kısmı kıtaları birbirine bağlayan denizaltı kablolarıyla sağlanıyor. 
@@ -207,8 +206,8 @@ Daha güncel bilgiler için <a href="http://submarine-cable-map-2012.telegeograp
 
 </item>
 <item>
-<link>http://caylakpenguen.github.io/archives/2014/01/30/kodlama_değiştirmek/index.html</link>
-<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/30/kodlama_değiştirmek/index.html</guid>
+<link>http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html</guid>
 <title>Kodlama Değiştirmek </title>
 <dc:date>2014-01-30T00:47:02+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
@@ -227,8 +226,8 @@ root@slax:~/test# </pre>
 
 </item>
 <item>
-<link>http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberleşme_listeleri/index.html</link>
-<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberleşme_listeleri/index.html</guid>
+<link>http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html</guid>
 <title>Linux E-Posta Haberleşme Listeleri </title>
 <dc:date>2014-01-27T23:55:40+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>

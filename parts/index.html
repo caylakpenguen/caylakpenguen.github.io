@@ -69,16 +69,15 @@ root@truva:~/Disk#</pre>
 
 Buraya kadar herşey güzel, fakat şimdi sanaldisk üzerindeki bölümleri formatlamaya geldi.
 Sanal diskimizi biçimleyebilmek ve mount edebilmek için öncelikler loop devices ile eşlemek gerekli.
-sanal disk fiziksel bir çihaz olmadığı için sistem tarafından gerekli aygıtlar oluşturulmaz.
+sanal disk fiziksel bir çihaz olmadığı için sistem tarafından gerekli aygıtlar oluşturulmaz.<br/>
 Hatırlayınız Sistemimize Flash bellek taktığımızda udev tarafından gerekli aygıtlar otomatik oluşturulur  
 Örneğin.
 <pre> /dev/sdb /dev/sdb1 </pre>
-gibi.
 
 diski biçimlemek ve mount etmek için 3 yol var.
 Birincisi Qemu ile oluşturacağımız sanal sistem üzerinden biçimlemek.
-ikincisi -o loop seçeneği ile loop aygıtlari le diskin bölümlerini eşlemek.
-üçüncüsü Raid Kullanmak :) Evet Raid :)
+ikincisi -o offset değerini hesaplayıp loop aygıtlari ile diskin bölümlerini eşlemek.
+üçüncüsü Raid Kullanmak :) Evet Raid :)<br/>
 ilk iki seçeneği pas geçip üçüncüsünü anlatmak istiyorum.
 öncelikle loop74 devicesini raid yapacağız. 
 <pre> root@truva:~/Disk# mdadm --build --force caylakDisk --level linear --raid-devices 1  /dev/loop74
@@ -144,10 +143,10 @@ Görüş ve eleştirilerinizi bekleriz.
 	</div>
 
 	<div class="posted">
-		<br />Yazan <span class="item-creator"></span>
-| <a class="link" href="./archives/2014/02/07/sanal_disk_bölümleme_işlemleri/index.html">Kalıcı Bağ</a>
+		<br />Yazan <span class="item-creator">Çaylak Penguen</span>
+| <a class="link" href="./archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html">Kalıcı Bağ</a>
 | Bölümler: <!-- linux --><a href="./archives/linux/index.html">linux</a>
-<!-- <br /><a href="./archives/2014/02/07/sanal_disk_bölümleme_işlemleri/index.html#comments">Yorumlar</a> -->
+<!-- <br /><a href="./archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html#comments">Yorumlar</a> -->
 	</div>
 </div>
 <div class="item">
@@ -163,9 +162,9 @@ Görüş ve eleştirilerinizi bekleriz.
 
 	<div class="posted">
 		<br />Yazan <span class="item-creator">Çaylak Penguen</span>
-| <a class="link" href="./archives/2014/02/01/hayalimdeki_sistem_odası/index.html">Kalıcı Bağ</a>
+| <a class="link" href="./archives/2014/02/01/hayalimdeki_sistem_odas/index.html">Kalıcı Bağ</a>
 | Bölümler: <!-- linux --><a href="./archives/linux/index.html">linux</a>
-<!-- <br /><a href="./archives/2014/02/01/hayalimdeki_sistem_odası/index.html#comments">Yorumlar</a> -->
+<!-- <br /><a href="./archives/2014/02/01/hayalimdeki_sistem_odas/index.html#comments">Yorumlar</a> -->
 	</div>
 </div>
 <div class="item">
@@ -181,9 +180,9 @@ oldukça fazla Videolar var. İzlemenizi tavsiye ederim.
 
 	<div class="posted">
 		<br />Yazan <span class="item-creator">Çaylak Penguen</span>
-| <a class="link" href="./archives/2014/02/01/linux_videoları/index.html">Kalıcı Bağ</a>
+| <a class="link" href="./archives/2014/02/01/linux_videolar/index.html">Kalıcı Bağ</a>
 | Bölümler: <!-- linux --><a href="./archives/linux/index.html">linux</a>
-<!-- <br /><a href="./archives/2014/02/01/linux_videoları/index.html#comments">Yorumlar</a> -->
+<!-- <br /><a href="./archives/2014/02/01/linux_videolar/index.html#comments">Yorumlar</a> -->
 	</div>
 </div>
 <div class="item">
@@ -194,7 +193,7 @@ oldukça fazla Videolar var. İzlemenizi tavsiye ederim.
 		<div class="item-description">
 			
 <a href="javascript:void(window.open('/images/denizlalti-kabloagi-haritasi-2012-5.png','ph','width=700,height=411,menubar=yes,scrollbars=no,resizable=no'))"><Font size="-1">[Harita-1]</font></a>  <br/> 
- || <a href="javascript:void(window.open('/images/denizlalti-kabloagi-haritasi-2012-1.jpg','ph','width=799,height=298,menubar=yes,scrollbars=no,resizable=no'))"><Font size="-1">[Harita-2]</font></a>  <br/> 
+<a href="javascript:void(window.open('/images/denizlalti-kabloagi-haritasi-2012-1.jpg','ph','width=799,height=298,menubar=yes,scrollbars=no,resizable=no'))"><Font size="-1">[Harita-2]</font></a>  <br/> 
 <br />
 
 Dünyadaki İnternet veri akışının çok önemli bir kısmı kıtaları birbirine bağlayan denizaltı kablolarıyla sağlanıyor. 
@@ -211,9 +210,9 @@ Daha güncel bilgiler için <a href="http://submarine-cable-map-2012.telegeograp
 
 	<div class="posted">
 		<br />Yazan <span class="item-creator">Çaylak Penguen</span>
-| <a class="link" href="./archives/2014/01/31/denizaltı_kablo_ağı_haritası/index.html">Kalıcı Bağ</a>
+| <a class="link" href="./archives/2014/01/31/denizalt__kablo_a___haritas/index.html">Kalıcı Bağ</a>
 | Bölümler: <!-- linux --><a href="./archives/linux/index.html">linux</a>
-<!-- <br /><a href="./archives/2014/01/31/denizaltı_kablo_ağı_haritası/index.html#comments">Yorumlar</a> -->
+<!-- <br /><a href="./archives/2014/01/31/denizalt__kablo_a___haritas/index.html#comments">Yorumlar</a> -->
 	</div>
 </div>
 <div class="item">
@@ -238,9 +237,9 @@ root@slax:~/test# </pre>
 
 	<div class="posted">
 		<br />Yazan <span class="item-creator">Çaylak Penguen</span>
-| <a class="link" href="./archives/2014/01/30/kodlama_değiştirmek/index.html">Kalıcı Bağ</a>
+| <a class="link" href="./archives/2014/01/30/kodlama_de_i_tirmek/index.html">Kalıcı Bağ</a>
 | Bölümler: <!-- linux --><a href="./archives/linux/index.html">linux</a>
-<!-- <br /><a href="./archives/2014/01/30/kodlama_değiştirmek/index.html#comments">Yorumlar</a> -->
+<!-- <br /><a href="./archives/2014/01/30/kodlama_de_i_tirmek/index.html#comments">Yorumlar</a> -->
 	</div>
 </div>
 <div class="item">
@@ -255,9 +254,9 @@ root@slax:~/test# </pre>
 
 	<div class="posted">
 		<br />Yazan <span class="item-creator">Çaylak Penguen</span>
-| <a class="link" href="./archives/2014/01/27/linux_e-posta_haberleşme_listeleri/index.html">Kalıcı Bağ</a>
+| <a class="link" href="./archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html">Kalıcı Bağ</a>
 | Bölümler: <!-- linux --><a href="./archives/linux/index.html">linux</a>
-<!-- <br /><a href="./archives/2014/01/27/linux_e-posta_haberleşme_listeleri/index.html#comments">Yorumlar</a> -->
+<!-- <br /><a href="./archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html#comments">Yorumlar</a> -->
 	</div>
 </div>
 <div class="item">
