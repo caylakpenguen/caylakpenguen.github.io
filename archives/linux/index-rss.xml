@@ -1,39 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE rdf:RDF [
-<!ENTITY % HTMLlat1 PUBLIC
- "-//W3C//ENTITIES Latin 1 for XHTML//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml-lat1.ent">
-]>
-<rdf:RDF
- xmlns="http://purl.org/rss/1.0/"
+        <?xml-stylesheet type="text/css" href="http://caylakpenguen.github.io/styles/feed.css"?>
+<rss version="2.0"
  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
  xmlns:dc="http://purl.org/dc/elements/1.1/"
- xmlns:content="http://purl.org/rss/1.0/modules/content/"
  xmlns:admin="http://webns.net/mvcb/"
+ xmlns:atom="http://www.w3.org/2005/Atom"
 >
-<channel rdf:about="http://caylakpenguen.github.io/index.xml">
-<title>CaylakPenguen Nano Blog</title>
+<channel>
+<title>Dosyalandığı yer: linux | CaylakPenguen Nano Blog</title>
+<atom:link href="http://caylakpenguen.github.io/archives/linux/index-rss.xml" rel="self" type="application/rss+xml" />
 <link>http://caylakpenguen.github.io</link>
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-02-12T22:31:49+02:00</dc:date>
+<dc:date>2014-02-12T22:31:53+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
-<items>
-<rdf:Seq>
-<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html" />
-<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/02/01/hayalimdeki_sistem_odas/index.html" />
-<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/02/01/linux_videolar/index.html" />
-<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html" />
-<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html" />
-<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html" />
-<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/27/github/index.html" />
-<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html" />
-</rdf:Seq>
-</items>
-</channel>
-<item rdf:about="http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html">
+
+<item>
 <link>http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html</guid>
 <title>Sanal Disk Bölümleme işlemleri</title>
 <dc:date>2014-02-07T03:46:59+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
@@ -173,9 +158,11 @@ raid stop edelim.
 mdadm: stopped /dev/md/caylak</pre>
 
 Görüş ve eleştirilerinizi bekleriz.]]></description>
+
 </item>
-<item rdf:about="http://caylakpenguen.github.io/archives/2014/02/01/hayalimdeki_sistem_odas/index.html">
+<item>
 <link>http://caylakpenguen.github.io/archives/2014/02/01/hayalimdeki_sistem_odas/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/02/01/hayalimdeki_sistem_odas/index.html</guid>
 <title>Hayalimdeki sistem Odası </title>
 <dc:date>2014-02-01T19:12:36+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
@@ -188,18 +175,22 @@ Görüş ve eleştirilerinizi bekleriz.]]></description>
 
 
 </p>Can Kavaklıoğlu 'nun Kulakları Çınlasın  :-)]]></description>
+
 </item>
-<item rdf:about="http://caylakpenguen.github.io/archives/2014/02/01/linux_videolar/index.html">
+<item>
 <link>http://caylakpenguen.github.io/archives/2014/02/01/linux_videolar/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/02/01/linux_videolar/index.html</guid>
 <title>Linux Videoları </title>
 <dc:date>2014-02-01T03:56:38+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[<a href="http://propaganda.2flub.org/video/">Linux Videoları </a> linkte Linux ile ilgili
 oldukça fazla Videolar var. İzlemenizi tavsiye ederim.]]></description>
+
 </item>
-<item rdf:about="http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html">
+<item>
 <link>http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html</guid>
 <title>Denizaltı kablo ağı haritası.</title>
 <dc:date>2014-01-31T21:52:50+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
@@ -218,9 +209,11 @@ Haritada yapılması amaçlanan kablo ağlarına dair bilgi verilmemiştir. Kabl
 Kabloların geçtiği yerlerin fiziki konumunu tam olarak yansıtmamaktadır. 
 Daha güncel bilgiler için <a href="http://submarine-cable-map-2012.telegeography.com">submarine-cale-map.com</a> sitesini ziyaret edebilirsiniz.</p>
 <a href="http://www.bilim.org/denizalti-kablo-agi-haritasi.html">Kaynak Site</a> || <a href="http://www.youtube.com/watch?v=Gsoo_BOwrrM">Video</a>]]></description>
+
 </item>
-<item rdf:about="http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html">
+<item>
 <link>http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html</guid>
 <title>Kodlama Değiştirmek </title>
 <dc:date>2014-01-30T00:47:02+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
@@ -236,17 +229,21 @@ blog.conf.latin5: HTML document, ISO-8859 text
 root@slax:~/test# </pre>
 
 <a href="http://cankav-tr.tumblr.com/post/72179517438/gunun-kurtar-c-s-iconv">Kaynak Sayfa</a>]]></description>
+
 </item>
-<item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html">
+<item>
 <link>http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html</guid>
 <title>Linux E-Posta Haberleşme Listeleri </title>
 <dc:date>2014-01-27T23:55:40+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[<a href="http://liste.linux.org.tr/pipermail/">Türkiye Linux Kullanıcıları Derneği E-Posta Listeleri</a><br />]]></description>
+
 </item>
-<item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/github/index.html">
+<item>
 <link>http://caylakpenguen.github.io/archives/2014/01/27/github/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/27/github/index.html</guid>
 <title>Github </title>
 <dc:date>2014-01-27T20:15:50+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
@@ -257,41 +254,7 @@ Bilgilerinize ... </p>
 Detayli bilgi icin.  </p>
 <a href="http://caylak.truvalinux.org.tr/news.php?readmore=29">http://caylak.truvalinux.org.tr</a> </p>
 <a href="http://pages.github.com/"> http://pages.github.com/</a>]]></description>
+
 </item>
-<item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html">
-<link>http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html</link>
-<title>Welcome to NanoBlogger 3.4!</title>
-<dc:date>2014-01-27T19:50:49+02:00</dc:date>
-<dc:creator>n1xt3r</dc:creator>
-<dc:subject> nanoblogger-help</dc:subject>
-<description><![CDATA[<p>Welcome to NanoBlogger, a small weblog engine for the UNIX command line.</p>
-<p><strong>Quick Reference</strong></p>
-<ul>
-<li>create new weblog (directory) ... <code>nb -b &lt;blog_dir&gt; add <em>weblog</em></code></li>
-<li>create new article ... <code>nb add <em>article</em></code></li>
-<li>create new entry (w/o tag) ... <code>nb add <em>entry</em></code></li>
-<li>create new tag ... <code>nb add <em>tag</em></code></li>
-<li>tag new entry ... <code>nb --tag [tag_id] add <em>entry</em></code></li>
-<li>list entries ... <code>nb list &lt;query&gt;</code></li>
-<li>list tags ... <code>nb list <em>tags</em></code></li>
-<li>list entries by tag ... <code>nb list <em>tag</em> [tag_id]</code></li>
-<li>edit entry ... <code>nb edit <em>entry</em> [entry_id]</code></li>
-<li>tag entry ... <code>nb --tag [tag_id] tag-entry [entry_id]</code></li>
-<li>untag entry ... <code>nb --tag [tag_id] delete <em>entry</em> [entry_id]</code></li>
-<li>delete tag ... <code>nb delete <em>tag</em> [tag_id]</code></li>
-<li>delete entry ... <code>nb delete <em>entry</em> [entry_id]</code></li>
-<li>draft entry or article ... <code>nb draft [draft_file]</code></li>
-<li>import draft as entry ... <code>nb import <em>entry</em> [draft_file]</code></li>
-<li>import draft as article ... <code>nb import <em>article</em> [draft_file]</code></li>
-<li>update weblog ... <code>nb update &lt;all|DATE|main|max|articles|feeds&gt;</code></li>
-</ul>
-<p><code>&lt;query&gt;</code> may equal <code>all,tag,DATE or max</code> (defaults to all)</p>
-<p>
-Thank you for choosing NanoBlogger. Please direct comments and suggestions to
-the <a href="http://groups.yahoo.com/group/nanoblogger/">mailing list</a> or
-submit a bug report to the
-<a href="http://sourceforge.net/tracker/?atid=635240&amp;group_id=103576&amp;func=browse">project page</a>
-over at sourceforge.net.
-</p>]]></description>
-</item>
-</rdf:RDF>
+</channel>
+</rss>
