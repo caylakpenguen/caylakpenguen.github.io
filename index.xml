@@ -17,10 +17,11 @@
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-02-26T23:08:26+00:00</dc:date>
+<dc:date>2014-03-03T00:22:44+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 <items>
 <rdf:Seq>
+<rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/03/03/raspberry_pi_and_mjpg-streamer/index.html" />
 <rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html" />
 <rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/02/01/hayalimdeki_sistem_odas/index.html" />
 <rdf:li rdf:resource="http://caylakpenguen.github.io/archives/2014/02/01/linux_videolar/index.html" />
@@ -32,10 +33,22 @@
 </rdf:Seq>
 </items>
 </channel>
+<item rdf:about="http://caylakpenguen.github.io/archives/2014/03/03/raspberry_pi_and_mjpg-streamer/index.html">
+<link>http://caylakpenguen.github.io/archives/2014/03/03/raspberry_pi_and_mjpg-streamer/index.html</link>
+<title>Raspberry Pi &amp; MJPG-Streamer </title>
+<dc:date>2014-03-03T00:15:31+02:00</dc:date>
+<dc:creator>Çaylak Penguen</dc:creator>
+<dc:subject> linux</dc:subject>
+<description><![CDATA[Raspberry Pi ile Canlı canlı WebCam yayını izleyin.<br/>
+Ben Pen Beğendim :-) <br/>
+<a href="javascript:void(window.open('http://www.matthewrobbins.co.uk/blog/wp-content/uploads/2014/02/IMG_20140227_153625.jpg','ph','width=816,height=612,menubar=yes,scrollbars=no,resizable=no'))"><Font size="-1">[Resim]</font></a>  <br/> 
+<a href="http://www.matthewrobbins.co.uk/abercam">http://www.matthewrobbins.co.uk/abercam</a>
+<a href="http://www.matthewrobbins.co.uk/blog/">http://www.matthewrobbins.co.uk/blog/</a>]]></description>
+</item>
 <item rdf:about="http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html</link>
 <title>Sanal Disk Bölümleme işlemleri</title>
-<dc:date>2014-02-07T03:46:59+00:00</dc:date>
+<dc:date>2014-02-07T03:46:59+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[Sanal sabit disk ile hiç uğraştınızmı? Sanırım uğraştınız.
@@ -177,7 +190,7 @@ Görüş ve eleştirilerinizi bekleriz.]]></description>
 <item rdf:about="http://caylakpenguen.github.io/archives/2014/02/01/hayalimdeki_sistem_odas/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/02/01/hayalimdeki_sistem_odas/index.html</link>
 <title>Hayalimdeki sistem Odası </title>
-<dc:date>2014-02-01T19:12:36+00:00</dc:date>
+<dc:date>2014-02-01T19:12:36+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[Hayalimdeki Mikemmel Sistem Odası Bakınız  ->> 
@@ -192,7 +205,7 @@ Görüş ve eleştirilerinizi bekleriz.]]></description>
 <item rdf:about="http://caylakpenguen.github.io/archives/2014/02/01/linux_videolar/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/02/01/linux_videolar/index.html</link>
 <title>Linux Videoları </title>
-<dc:date>2014-02-01T03:56:38+00:00</dc:date>
+<dc:date>2014-02-01T03:56:38+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[<a href="http://propaganda.2flub.org/video/">Linux Videoları </a> linkte Linux ile ilgili
@@ -201,7 +214,7 @@ oldukça fazla Videolar var. İzlemenizi tavsiye ederim.]]></description>
 <item rdf:about="http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/01/31/denizalt__kablo_a___haritas/index.html</link>
 <title>Denizaltı kablo ağı haritası.</title>
-<dc:date>2014-01-31T21:52:50+00:00</dc:date>
+<dc:date>2014-01-31T21:52:50+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[
@@ -222,7 +235,7 @@ Daha güncel bilgiler için <a href="http://submarine-cable-map-2012.telegeograp
 <item rdf:about="http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/01/30/kodlama_de_i_tirmek/index.html</link>
 <title>Kodlama Değiştirmek </title>
-<dc:date>2014-01-30T00:47:02+00:00</dc:date>
+<dc:date>2014-01-30T00:47:02+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[Text dosyalarının karakter kodlamasını değiştirmek için keyifle kullanınız:
@@ -240,7 +253,7 @@ root@slax:~/test# </pre>
 <item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/01/27/linux_e-posta_haberle_me_listeleri/index.html</link>
 <title>Linux E-Posta Haberleşme Listeleri </title>
-<dc:date>2014-01-27T23:55:40+00:00</dc:date>
+<dc:date>2014-01-27T23:55:40+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[<a href="http://liste.linux.org.tr/pipermail/">Türkiye Linux Kullanıcıları Derneği E-Posta Listeleri</a><br />]]></description>
@@ -248,7 +261,7 @@ root@slax:~/test# </pre>
 <item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/github/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/01/27/github/index.html</link>
 <title>Github </title>
-<dc:date>2014-01-27T20:15:50+00:00</dc:date>
+<dc:date>2014-01-27T20:15:50+02:00</dc:date>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[Blog Senliği.</p>
@@ -261,7 +274,7 @@ Detayli bilgi icin.  </p>
 <item rdf:about="http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html">
 <link>http://caylakpenguen.github.io/archives/2014/01/27/welcome_to_nanoblogger_3_4/index.html</link>
 <title>Welcome to NanoBlogger 3.4!</title>
-<dc:date>2014-01-27T19:50:49+00:00</dc:date>
+<dc:date>2014-01-27T19:50:49+02:00</dc:date>
 <dc:creator>n1xt3r</dc:creator>
 <dc:subject> nanoblogger-help</dc:subject>
 <description><![CDATA[<p>Welcome to NanoBlogger, a small weblog engine for the UNIX command line.</p>
