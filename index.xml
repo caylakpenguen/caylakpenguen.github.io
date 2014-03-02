@@ -17,7 +17,7 @@
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-03-03T00:33:12+02:00</dc:date>
+<dc:date>2014-03-03T00:35:23+02:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 <items>
 <rdf:Seq>
@@ -42,7 +42,7 @@
 <description><![CDATA[Raspberry Pi ile Canlı canlı WebCam yayını izleyin.<br/>
 Ben çok Beğendim :-) <br/>
 <a href="javascript:void(window.open('http://www.matthewrobbins.co.uk/blog/wp-content/uploads/2014/02/IMG_20140227_153625.jpg','ph','width=816,height=612,menubar=yes,scrollbars=no,resizable=no'))"><Font size="-1">[Resim]</font></a>  <br/> 
-<a href="http://www.matthewrobbins.co.uk/abercam">http://www.matthewrobbins.co.uk/abercam</a>
+<a href="http://www.matthewrobbins.co.uk/abercam">http://www.matthewrobbins.co.uk/abercam</a> <br/>
 <a href="http://www.matthewrobbins.co.uk/blog/">http://www.matthewrobbins.co.uk/blog/</a>]]></description>
 </item>
 <item rdf:about="http://caylakpenguen.github.io/archives/2014/02/07/sanal_disk_b_l_mleme_i_lemleri/index.html">
