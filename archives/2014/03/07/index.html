@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="NanoBlogger 3.5-RC1" />
+<meta name="robots" content="all" />
+<meta name="revisit-after" content="31 days" />
+
+<title>Mart 07, 2014 Arşiv | CaylakPenguen Nano Blog</title>
+
+<link rel="stylesheet" href="../../../../styles/nb_steelblue.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../../styles/print.css" type="text/css" media="print" />
+<link rel="shortcut icon" href="../../../../images/favicon.ico" />
+<link rel="alternate" type="application/atom+xml"
+title="Atom 1.0"
+href="../../../../atom.xml"
+/>
+<link rel="alternate" type="application/rss+xml"
+title="RSS 2.0"
+href="../../../../rss.xml"
+/>
+<link rel="alternate" type="application/rss+xml"
+title="RSS 1.0"
+href="../../../../index.xml"
+/>
+</head>
+
+<body>
+
+<div id="banner">
+	<h1><a href="../../../../index.html" accesskey="1">CaylakPenguen Nano Blog</a></h1>
+	<span class="description">Linux, Haber, Geliştirme</span>
+</div><!-- /banner div -->
+<div id="container">
+
+	<div class="archives">
+
+		<a id="top"></a>
+		<h2>Mart 07, 2014 Arşiv</h2>
+		<div class="menu">
+			<a href="../../../../index.html">Baş Sayfa</a> &#62;
+			<a href="../../../../archives/index.html">Arşiv</a> &#62;
+			<a href="../../../../archives/2014/index.html">2014</a> &#62;
+			<a href="../../../../archives/2014/03/index.html">03</a> &#62;
+			<br />
+	<a href="../../../../archives/2014/03/03/index.html">&#60;</a>
+			07
+	
+		</div>
+		<div class="item">
+	<a id="e2014-03-07T22_47_50.txt"></a>
+	<h2 class="date">07-Mart-2014-Cuma  22:47:50</h2>
+	<div class="blogbody">
+		<h3 class="title">SSH Reverse Tunneling</h3>
+		<div class="item-description">
+			Bir arkadaşınızın SSH sunucusuna bağlanmak istiyorsunuz fakat arkadaşınız bir NAT arkasında (modem vb) veya güvenlik duvarı arkadaşınıza bağlanmanıza izin vermiyor.<p/>
+SSH Reverse Tunneling tam da aradığınız şey!<p/>
+SSH Reverse Tunnel ile arkadaşınız, sizin SSH sunucunuza bağlanabilir ve oluşturacağı tünel ile herhangi bir portunu sizin sunucunuzda kullanılabilir hale getirebilir.<p/>
+<br/>
+Bu tür bir tünel oluşturabilmek için yapmanız gerekenler şunlardır:<p/>
+<br/>
+
+<li> Öncelikle arkadaşınızın sizin makinenize bağlanmasını sağlamalısınız. Bunun için de sizin SSH sunucunuzun dışarıdan ulaşılabilir olması gerekmekte. adduser ile makinanızda arkadaşınıza bir kullanıcı oluşturun.</li>
+<br/>
+<li> Ardından arkadaşınızın, sizin makinanıza şu komutla giriş yapmasını sağlayın:</li>
+<pre>ssh -R 14443:localhost:22 kullaniciadi@ip-adresiniz </pre>
+Arkadaşınız giriş yaptığında, sizin makinanızda açılacak olan 14443 numaralı port, arkadaşınızın makinasının 22 numaralı portuna yönlendirilecektir. 22 numaralı port SSH portudur, isterseniz farklı bir portu da yönlendirebilirsiniz. 14443 yerine herhangi bir port numarası tercih edebilirsiniz, fakat unutmayın ki 1024 den küçük portlar için root yetkisi gerekmektedir.
+<br/>
+<li>Arkadaşınız sizin makinanıza başarılı bir şekilde giriş yaptıktan sonra, yönlendirmiş olduğu SSH portunu kullanmak ve arkadaşınızın makinasına giriş yapmak için şu komutu kullanın: </li>
+<pre>ssh arkadasinizinkullaniciadi@localhost -P 14443</pre>
+
+Başarılı bir şekilde giriş yapın.<br/>
+<br/>
+Bu özellik sayesinde NAT arkasında olan tüm makinelere bağlanabilirsiniz. Özellikle port yönlendirmesi yapamayacak olan makinelere bağlanmak için çok yararlı bir özellik ve GNU/Linux'de herşeyin mümkün olduğunu bir kere daha gösteriyor.<br/>
+<br/>
+<a href="http://onur.im/blog/2011/04/ssh-reverse-tunneling/tr/">Kaynak Sayfa</a>
+		</div>
+	</div>
+
+	<div class="posted">
+		<br />Yazan <span class="item-creator">Çaylak Penguen</span>
+| <a class="link" href="../../../../archives/2014/03/07/ssh_reverse_tunneling/index.html">Kalıcı Bağ</a>
+| Bölümler: <!-- linux --><a href="../../../../archives/linux/index.html">linux</a>
+<!-- <br /><a href="../../../../archives/2014/03/07/ssh_reverse_tunneling/index.html#comments">Yorumlar</a> -->
+	</div>
+</div>
+		<div class="menu">
+			<a href="#top">&#47;&#92;</a><br />
+		</div>
+
+	</div><!-- /archives div -->
+
+</div><!-- /container div -->
+
+</body>
+</html>
