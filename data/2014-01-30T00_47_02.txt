@@ -6,7 +6,7 @@ DESC:
 FORMAT: autobr
 -----
 BODY:
-<img src="/images/ssh_terminal.jpg"  width="80" height="80" alt="" border="0" align="left"></br>
+<img src="/images/ssh_terminal.jpg"  width="50" height="50" alt="" border="0" align="left"></br>
 Text dosyalarının karakter kodlamasını değiştirmek için keyifle kullanınız:
 <pre>iconv -f utf8 -t latin5 dosya_utf8.tex > dosya_latin5.tex </pre>
 <br/>
