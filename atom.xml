@@ -7,7 +7,7 @@
 <subtitle type="html">Linux, Haber, Geliştirme</subtitle>
 <link rel="alternate" type="text/html" href="http://caylakpenguen.github.io"/>
 <link rel="self" type="application/atom+xml" href="http://caylakpenguen.github.io/atom.xml"/>
-<updated>2014-05-06T04:43:16+00:00</updated>
+<updated>2014-05-06T23:08:46+00:00</updated>
 <author>
 <name>Çaylak Penguen</name>
 <uri>http://caylakpenguen.github.io</uri>
@@ -30,6 +30,7 @@ NanoBlogger
 <category term="linux" />
 <content type="xhtml">
 <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="/images/iso.png"  width="70" height="70" alt="" border="0" align="left"></br>
 Herşey Gui değil tabiki.</br>
 Konsol Candır.</br>
 İso Kalıpları Konsoldan da yazılabilir.</br>
@@ -71,6 +72,7 @@ cdrecord: fifo was 0 times empty and 10311 times full, min fill was 90%.
 <category term="linux" />
 <content type="xhtml">
 <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="/images/openssh.gif"  width="200" height="80" alt="" border="0" align="left"></p>
 Bir arkadaşınızın SSH sunucusuna bağlanmak istiyorsunuz fakat arkadaşınız bir NAT arkasında (modem vb) veya güvenlik duvarı arkadaşınıza bağlanmanıza izin vermiyor.<p/>
 SSH Reverse Tunneling tam da aradığınız şey!<p/>
 SSH Reverse Tunnel ile arkadaşınız, sizin SSH sunucunuza bağlanabilir ve oluşturacağı tünel ile herhangi bir portunu sizin sunucunuzda kullanılabilir hale getirebilir.<p/>
@@ -109,6 +111,7 @@ Bu özellik sayesinde NAT arkasında olan tüm makinelere bağlanabilirsiniz. Ö
 <category term="linux" />
 <content type="xhtml">
 <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="/images/Git-logo.png"  width="80" height="80" alt="" border="0" align="left"></br>
 Güzel ve Basit bir Git Kullanım Rehberine rastladım.<br/>
 <a href="http://rogerdudler.github.io/git-guide/index.tr.html">http://rogerdudler.github.io/git-guide/index.tr.html</a> <br/>
 <a href="https://github.com/rogerdudler/git-guide">Github Repository</a><br>
@@ -130,6 +133,7 @@ Umarım işinize yarar.
 <category term="linux" />
 <content type="xhtml">
 <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="/images/raspi_logo.png"  width="" height="" alt="" border="0" align="left"></br>
 Raspberry Pi ile Canlı canlı WebCam yayını izleyin.<br/>
 Ben çok Beğendim :-) <br/>
 <a href="javascript:void(window.open('http://www.matthewrobbins.co.uk/blog/wp-content/uploads/2014/02/IMG_20140227_153625.jpg','ph','width=816,height=612,menubar=yes,scrollbars=no,resizable=no'))"><Font size="-1">[Resim]</font></a>  <br/> 
@@ -153,6 +157,10 @@ Ben çok Beğendim :-) <br/>
 <category term="linux" />
 <content type="xhtml">
 <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="/images/tux_disk.png"  width="80" height="80" alt="" border="0" align="left"></br>
+<br/>
+<br/>
+
 Sanal sabit disk ile hiç uğraştınızmı? Sanırım uğraştınız.
 Linux ile iç içe olan bir kişi olarak şahsen sıklıkla uğraşıyorum.
 Geçenlerde minicik bir sanal sistem oluşturayım dedim.
@@ -330,6 +338,8 @@ Hayalimdeki Mikemmel Sistem Odası Bakınız  ->>
 <category term="linux" />
 <content type="xhtml">
 <div xmlns="http://www.w3.org/1999/xhtml">
+
+<img src="/images/tux-100x100.jpg"  width="80" height="80" alt="" border="0" align="left"></br>
 <a href="http://propaganda.2flub.org/video/">Linux Videoları </a> linkte Linux ile ilgili
 oldukça fazla Videolar var. İzlemenizi tavsiye ederim.
 </div>
@@ -380,6 +390,7 @@ Daha güncel bilgiler için <a href="http://submarine-cable-map-2012.telegeograp
 <category term="linux" />
 <content type="xhtml">
 <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="/images/ssh_terminal.jpg"  width="80" height="80" alt="" border="0" align="left"></br>
 Text dosyalarının karakter kodlamasını değiştirmek için keyifle kullanınız:
 <pre>iconv -f utf8 -t latin5 dosya_utf8.tex > dosya_latin5.tex </pre>
 <br/>

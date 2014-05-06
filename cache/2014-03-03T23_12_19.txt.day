@@ -5,6 +5,7 @@ DESC:
 FORMAT: autobr
 -----
 BODY:
+<img src="/images/Git-logo.png"  width="80" height="80" alt="" border="0" align="left"></br>
 Güzel ve Basit bir Git Kullanım Rehberine rastladım.<br/>
 <a href="http://rogerdudler.github.io/git-guide/index.tr.html">http://rogerdudler.github.io/git-guide/index.tr.html</a> <br/>
 <a href="https://github.com/rogerdudler/git-guide">Github Repository</a><br>

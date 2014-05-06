@@ -5,6 +5,7 @@ DESC:
 FORMAT: autobr
 -----
 BODY:
+<img src="/images/iso.png"  width="70" height="70" alt="" border="0" align="left"></br>
 Herşey Gui değil tabiki.</br>
 Konsol Candır.</br>
 İso Kalıpları Konsoldan da yazılabilir.</br>
