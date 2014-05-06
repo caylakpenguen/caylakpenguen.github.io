@@ -3,7 +3,7 @@
 # 27 - 01 -2014 
 # blog güncellemek için betik
 
-git add .
+git add -A
 git commit -m "entry `date`"
 git push origin master
 sleep 5
