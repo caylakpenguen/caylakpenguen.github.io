@@ -13,9 +13,42 @@
 <description>Linux, Haber, Geliştirme</description>
 <dc:language>en-us</dc:language>
 <dc:creator>Çaylak Penguen</dc:creator>
-<dc:date>2014-04-21T23:17:01+00:00</dc:date>
+<dc:date>2014-05-06T04:30:35+00:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 <image><link>http://caylakpenguen.github.io</link><url>http://caylakpenguen.github.io/images/feed-icon-14x14.png</url><title>CaylakPenguen Nano Blog</title></image>
+<item>
+<link>http://caylakpenguen.github.io/archives/2014/05/06/konsoldan__so_yazd_rmak/index.html</link>
+<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/05/06/konsoldan__so_yazd_rmak/index.html</guid>
+<title>Konsoldan İso Yazdırmak. </title>
+<dc:date>2014-05-06T04:26:23+00:00</dc:date>
+<dc:creator>Çaylak Penguen</dc:creator>
+<dc:subject> linux</dc:subject>
+<description><![CDATA[Herşey Gui değil tabiki.</br>
+Konsol Candır.</br>
+İso Kalıpları Konsoldan da yazılabilir.</br>
+</br>
+<pre> root@truva:~/Masaüstü# cdrecord -v -eject -dao dev=/dev/sr0 speed=8 -data  debian-7.4.0-i386-xfce-CD-1.iso
+.................
+................
+...........
+.......
+
+Writing pregap for track 1 at -150
+Starting new track at sector: 0
+Track 01:  629 of  629 MB written (fifo 100%) [buf 100%]  17,0x.
+Track 01: Total bytes read/written: 659554304/659554304 (322048 sectors).
+Writing  time:  289.285s
+Average write speed  15,5x.
+Min drive buffer fill was 100%
+Fixating...
+Fixating time:   11.842s
+cdrecord: fifo had 10389 puts and 10389 gets.
+cdrecord: fifo was 0 times empty and 10311 times full, min fill was 90%.
+</pre>
+</br>
+İşte Budur :-)]]></description>
+
+</item>
 <item>
 <link>http://caylakpenguen.github.io/archives/2014/03/07/ssh_reverse_tunneling/index.html</link>
 <guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/03/07/ssh_reverse_tunneling/index.html</guid>
@@ -297,21 +330,6 @@ root@slax:~/test# </pre>
 <dc:creator>Çaylak Penguen</dc:creator>
 <dc:subject> linux</dc:subject>
 <description><![CDATA[<a href="http://liste.linux.org.tr/pipermail/">Türkiye Linux Kullanıcıları Derneği E-Posta Listeleri</a><br />]]></description>
-
-</item>
-<item>
-<link>http://caylakpenguen.github.io/archives/2014/01/27/github/index.html</link>
-<guid isPermaLink="true">http://caylakpenguen.github.io/archives/2014/01/27/github/index.html</guid>
-<title>Github </title>
-<dc:date>2014-01-27T20:15:50+00:00</dc:date>
-<dc:creator>Çaylak Penguen</dc:creator>
-<dc:subject> linux</dc:subject>
-<description><![CDATA[Blog Senliği.</p>
-Github Biz kullancilarina Ücresiz Blog Hosting Sağlıyor. </p>
-Bilgilerinize ... </p>
-Detayli bilgi icin.  </p>
-<a href="http://caylak.truvalinux.org.tr/news.php?readmore=29">http://caylak.truvalinux.org.tr</a> </p>
-<a href="http://pages.github.com/"> http://pages.github.com/</a>]]></description>
 
 </item>
 </channel>

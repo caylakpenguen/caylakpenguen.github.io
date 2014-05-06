@@ -7,7 +7,7 @@
 <subtitle type="html">Linux, Haber, Geliştirme</subtitle>
 <link rel="alternate" type="text/html" href="http://caylakpenguen.github.io"/>
 <link rel="self" type="application/atom+xml" href="http://caylakpenguen.github.io/atom.xml"/>
-<updated>2014-04-21T23:16:50+00:00</updated>
+<updated>2014-05-06T04:30:22+00:00</updated>
 <author>
 <name>Çaylak Penguen</name>
 <uri>http://caylakpenguen.github.io</uri>
@@ -17,6 +17,47 @@
 NanoBlogger
 </generator>
 
+<entry>
+<title type="html">Konsoldan İso Yazdırmak. </title>
+<author>
+<name>Çaylak Penguen</name>
+</author>
+<link rel="alternate" type="text/html" href="http://caylakpenguen.github.io/archives/2014/05/06/konsoldan__so_yazd_rmak/index.html"/>
+
+<id>http://caylakpenguen.github.io/archives/2014/05/06/konsoldan__so_yazd_rmak/index.html</id>
+<published>2014-05-06T04:26:23+00:00</published>
+<updated>2014-05-06T04:26:23+00:00</updated>
+<category term="linux" />
+<content type="xhtml">
+<div xmlns="http://www.w3.org/1999/xhtml">
+Herşey Gui değil tabiki.</br>
+Konsol Candır.</br>
+İso Kalıpları Konsoldan da yazılabilir.</br>
+</br>
+<pre> root@truva:~/Masaüstü# cdrecord -v -eject -dao dev=/dev/sr0 speed=8 -data  debian-7.4.0-i386-xfce-CD-1.iso
+.................
+................
+...........
+.......
+
+Writing pregap for track 1 at -150
+Starting new track at sector: 0
+Track 01:  629 of  629 MB written (fifo 100%) [buf 100%]  17,0x.
+Track 01: Total bytes read/written: 659554304/659554304 (322048 sectors).
+Writing  time:  289.285s
+Average write speed  15,5x.
+Min drive buffer fill was 100%
+Fixating...
+Fixating time:   11.842s
+cdrecord: fifo had 10389 puts and 10389 gets.
+cdrecord: fifo was 0 times empty and 10311 times full, min fill was 90%.
+</pre>
+</br>
+İşte Budur :-)
+</div>
+</content>
+
+</entry>
 <entry>
 <title type="html">SSH Reverse Tunneling</title>
 <author>
@@ -368,29 +409,6 @@ root@slax:~/test# </pre>
 <content type="xhtml">
 <div xmlns="http://www.w3.org/1999/xhtml">
 <a href="http://liste.linux.org.tr/pipermail/">Türkiye Linux Kullanıcıları Derneği E-Posta Listeleri</a><br />
-</div>
-</content>
-
-</entry>
-<entry>
-<title type="html">Github </title>
-<author>
-<name>Çaylak Penguen</name>
-</author>
-<link rel="alternate" type="text/html" href="http://caylakpenguen.github.io/archives/2014/01/27/github/index.html"/>
-
-<id>http://caylakpenguen.github.io/archives/2014/01/27/github/index.html</id>
-<published>2014-01-27T20:15:50+00:00</published>
-<updated>2014-01-27T20:15:50+00:00</updated>
-<category term="linux" />
-<content type="xhtml">
-<div xmlns="http://www.w3.org/1999/xhtml">
-Blog Senliği.</p>
-Github Biz kullancilarina Ücresiz Blog Hosting Sağlıyor. </p>
-Bilgilerinize ... </p>
-Detayli bilgi icin.  </p>
-<a href="http://caylak.truvalinux.org.tr/news.php?readmore=29">http://caylak.truvalinux.org.tr</a> </p>
-<a href="http://pages.github.com/"> http://pages.github.com/</a>
 </div>
 </content>
 
