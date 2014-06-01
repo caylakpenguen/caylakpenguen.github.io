@@ -93,7 +93,10 @@ $NB_RSSAltLink
 			$template_powered
 			<a href="http://nanoblogger.sourceforge.net">nb $VERSION</a>
 		</div>
-
+<object type="application/x-shockwave-flash" data="/flash/dewplayer-rect.swf" width="240" height="20" id="dewplayermultirect" name="dewplayermultirect">
+<param name="movie" value="/flash/dewplayer-rect.swf" />
+<param name="flashvars" value="mp3=/flash/gitmeni_isteyen_kimki.mp3&amp;autostart=1" />
+</object>
 	</div><!-- /links div -->
 
 	<div id="content">
@@ -112,10 +115,7 @@ $NB_RSSAltLink
 		<div class="menu">
 			<a href="#top">$NB_TopPage</a>
 		</div>
-<center><object type="application/x-shockwave-flash" data="/flash/dewplayer-rect.swf" width="240" height="20" id="dewplayermultirect" name="dewplayermultirect">
-<param name="movie" value="/flash/dewplayer-rect.swf" />
-<param name="flashvars" value="mp3=/flash/gitmeni_isteyen_kimki.mp3&amp;autostart=1" />
-</object></center>
+
 	</div><!-- /content div -->
 
 </div><!-- /container div -->
