@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Caylak Pelikan Blog</title><link href="http://caylakpenguen.github.io/" rel="alternate"></link><link href="http://caylakpenguen.github.io/feeds/all-en.atom.xml" rel="self"></link><id>http://caylakpenguen.github.io/</id><updated>2016-12-19T00:19:00+01:00</updated><entry><title>Pelican'a geçiş</title><link href="http://caylakpenguen.github.io/pelican-a-gecis.html" rel="alternate"></link><published>2016-12-19T00:19:00+01:00</published><updated>2016-12-19T00:19:00+01:00</updated><author><name>caylak</name></author><id>tag:caylakpenguen.github.io,2016-12-19:pelican-a-gecis.html</id><summary type="html">&lt;p&gt;&lt;meta property="og:image" content="http://www.php2s.com/wp-content/uploads/2012/06/python-logo-official.png"/&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Caylak Pelikan Blog</title><link href="http://caylakpenguen.github.io/" rel="alternate"></link><link href="http://caylakpenguen.github.io/feeds/all-en.atom.xml" rel="self"></link><id>http://caylakpenguen.github.io/</id><updated>2016-12-19T00:19:00+01:00</updated><entry><title>Pelican'a geçiş</title><link href="http://caylakpenguen.github.io/pelican-a-gecis.html" rel="alternate"></link><published>2016-12-19T00:19:00+01:00</published><updated>2016-12-19T00:19:00+01:00</updated><author><name>caylak</name></author><id>tag:caylakpenguen.github.io,2016-12-19:/pelican-a-gecis.html</id><summary type="html">&lt;p&gt;&lt;meta property="og:image" content="http://www.php2s.com/wp-content/uploads/2012/06/python-logo-official.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Konuya direk giriş yapmadan önce hayatımıza yeni yeni girmiş olan &lt;strong&gt;Static Blogging Engine&lt;/strong&gt; terimi üzerinde durmak lazım. Nedir bu &lt;strong&gt;Static Blogging Engine&lt;/strong&gt; ? &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Static Blogging Engine&lt;/strong&gt; kısa olarak yazdığınız &lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;, &lt;a href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; formatlı metin dosyalarınızı, muteşem bir şekilde static, yani herhangi bir server-side dile ihtiyaç duymadan yayınlayabileceğiniz html tabanlı bir bloga çeviren …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;meta property="og:image" content="http://www.php2s.com/wp-content/uploads/2012/06/python-logo-official.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Konuya direk giriş yapmadan önce hayatımıza yeni yeni girmiş olan &lt;strong&gt;Static Blogging Engine&lt;/strong&gt; terimi üzerinde durmak lazım. Nedir bu &lt;strong&gt;Static Blogging Engine&lt;/strong&gt; ? &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Static Blogging Engine&lt;/strong&gt; kısa olarak yazdığınız &lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;, &lt;a href="http://docutils.sourceforge.net/rst.html"&gt;reStructuredText&lt;/a&gt; formatlı metin dosyalarınızı, muteşem bir şekilde static, yani herhangi bir server-side dile ihtiyaç duymadan yayınlayabileceğiniz html tabanlı bir bloga çeviren şahane yapıya deniyor.&lt;/p&gt;
 &lt;p&gt;İstediğiniz kadar caching yapın, dosya sıkıştırın html kadar hızlı render edilen bir yazılıma sahip olmak pekte mümkün bir olay değil. Siz yazıları &lt;strong&gt;markdown&lt;/strong&gt; olarak yazıyorsunuz, blog engine'iniz size html yapısnı oluşturuyor. Tabi html diyince aklınıza sadece yazılardan oluşan sayfalar gelmesin, bunun içersinde bir blogda ihtiyaç duyulan neredeyse herşey mevcut. Tagler, kategoriler, comment sistemi, sosyal medya entegresi vs ne ararsanız çoğunlukla var.&lt;/p&gt;
@@ -133,7 +135,9 @@ Done. Your new project is available at /Users/ekinertac/Sites/test/project
 
 &lt;p&gt;komutunu çalıştırıyorum, ve herhangi bir hata yoksa, &lt;code&gt;project/output&lt;/code&gt; klasörü altında .html dosyalarım &lt;strong&gt;yayınlanmaya hazır&lt;/strong&gt; olarak bekliyor.&lt;/p&gt;
 &lt;p&gt;Daha fazla dökümantasyon için Pelican'ın &lt;strong&gt;bol detaylı&lt;/strong&gt; &lt;a href="http://docs.getpelican.com/en/latest/getting_started.html"&gt;dökümantasyon&lt;/a&gt; sayfasını ziyaret edebilirsiniz.&lt;/p&gt;
-&lt;p&gt;Kaynak Site : &lt;a href="http://ekinertac.com/"&gt;http://www.ekinertac.com&lt;/a&gt;&lt;/p&gt;</summary><category term="python"></category><category term="pelican"></category></entry><entry><title>Sublime Text</title><link href="http://caylakpenguen.github.io/sublime-text.html" rel="alternate"></link><published>2016-12-17T22:55:00+01:00</published><updated>2016-12-17T22:55:00+01:00</updated><author><name>caylak</name></author><id>tag:caylakpenguen.github.io,2016-12-17:sublime-text.html</id><summary type="html">&lt;p&gt;&lt;img alt="Cover Image" src="/images/sublime-text.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Kaynak Site : &lt;a href="http://ekinertac.com/"&gt;http://www.ekinertac.com&lt;/a&gt;&lt;/p&gt;</content><category term="python"></category><category term="pelican"></category></entry><entry><title>Sublime Text</title><link href="http://caylakpenguen.github.io/sublime-text.html" rel="alternate"></link><published>2016-12-17T22:55:00+01:00</published><updated>2016-12-17T22:55:00+01:00</updated><author><name>caylak</name></author><id>tag:caylakpenguen.github.io,2016-12-17:/sublime-text.html</id><summary type="html">&lt;p&gt;&lt;img alt="Cover Image" src="/images/sublime-text.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Text editörler, IDE'ler... uğruna internette forumlarda, ofiste arkadaşlarımızla tartıştığımız, üstüne gül koklamadığımız editörler. Herkesin kullandığı editör kendisine göre en iyisi, ondan daha iyisi &lt;strong&gt;yok&lt;/strong&gt;. &lt;strong&gt;Olamazda&lt;/strong&gt; zaten, en iyi editör herzaman en iyi, en etkili şekilde &lt;strong&gt;kullanabildiğiniz&lt;/strong&gt; editördür.&lt;/p&gt;
+&lt;p&gt;Kullanabildiğiniz diyorum çünkü editörün &lt;strong&gt;core&lt;/strong&gt; özelliklerini kullanabilmekte bir marifet, sadece kod yazıp save …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Cover Image" src="/images/sublime-text.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Text editörler, IDE'ler... uğruna internette forumlarda, ofiste arkadaşlarımızla tartıştığımız, üstüne gül koklamadığımız editörler. Herkesin kullandığı editör kendisine göre en iyisi, ondan daha iyisi &lt;strong&gt;yok&lt;/strong&gt;. &lt;strong&gt;Olamazda&lt;/strong&gt; zaten, en iyi editör herzaman en iyi, en etkili şekilde &lt;strong&gt;kullanabildiğiniz&lt;/strong&gt; editördür.&lt;/p&gt;
 &lt;p&gt;Kullanabildiğiniz diyorum çünkü editörün &lt;strong&gt;core&lt;/strong&gt; özelliklerini kullanabilmekte bir marifet, sadece kod yazıp save ediyorsanız zaten farketmez hangi editörü kullandığınız, notepad.exe bile işinizi görür, gık demezsiniz. Yazının buradan sonraki bölümü bu tarzdaki kullanıcıları çok &lt;strong&gt;ilgilendirmiyor&lt;/strong&gt; zaten.&lt;/p&gt;
 &lt;p&gt;Birde editörün core özelliklerini zaten halihazırda kullanan, onlar ile yetinmeyip plugin üstüne plugin kuran, gün be gün yeni update varmı diye kontrol eden bir tayfa varki onlar bu yazının odak noktası. &lt;strong&gt;Kedi canını yediklerim.&lt;/strong&gt;&lt;/p&gt;
@@ -150,10 +154,10 @@ Done. Your new project is available at /Users/ekinertac/Sites/test/project
 &lt;blockquote&gt;
 &lt;p&gt;Sublime'ın bu panelden açılan menülerinde bir güzellik var aradığınız şeyin tam adını veya ilk bir kaç harfini yazmak zorunda değilsiniz, diyelimki &lt;code&gt;CodeClassTextSelector&lt;/code&gt; diye bir class arıyorsunuz arama kutusuna &lt;code&gt;ccts&lt;/code&gt; gibi birşeyler yazmanız onu bulabilmeniz için yeterli oluyor.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt="Goto Anything" src="images/screen-shot-2013-03-01-at-71134-am.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Goto Anything" src="images/screen-shot-2013-03-01-at-71134-am.png"&gt;&lt;/p&gt;
 &lt;h4&gt;Goto Symbol&lt;/h4&gt;
 &lt;p&gt;Goto Symbol özelliğide anything özelliği kadar kullanışlı, editörde açık olan dosyadaki  fonksiyonları, classları, idleri kısaca tüm keywordleri yakalayıp size getiren bir özellik. &lt;code&gt;Cmd/Ctrl + R&lt;/code&gt; kısayoluyla açtığınız panelde &lt;code&gt;cre&lt;/code&gt; yazıyorum ve bana &lt;code&gt;cre&lt;/code&gt; ile başlıyan tüm fonksiyon veya class'ları bulup getiriyor.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Goto Symbol" src="images/screen-shot-2013-03-01-at-73247-am.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Goto Symbol" src="images/screen-shot-2013-03-01-at-73247-am.png"&gt;&lt;/p&gt;
 &lt;h4&gt;Goto Line&lt;/h4&gt;
 &lt;p&gt;Goto Line özelliği de öncekilere benzeyen bir özellik, &lt;code&gt;kntrl/Ctrl + G&lt;/code&gt; kısayoluyla çalışıyor ve sizi istediğiniz satır numarasına götürüyor.&lt;/p&gt;
 &lt;h3&gt;Multiple Select&lt;/h3&gt;
@@ -222,7 +226,7 @@ Done. Your new project is available at /Users/ekinertac/Sites/test/project
 
 &lt;p&gt;Türkçe klavyelerde malesef backtick &lt;code&gt;`&lt;/code&gt;  karakterenin tam olarak bir karşılığı olmadığı için &lt;code&gt;View &amp;gt; Console&lt;/code&gt; menüsünden Sublime'ın konsolunu açıyoruz ve yukarıdaki kodu copy+paste yapıp &lt;code&gt;Enter&lt;/code&gt;'a basıyoruz. Sublime bizden kendisini restart etmemizi istiyor, restartı yaptıktan sonra &lt;strong&gt;Sublime Package Control&lt;/strong&gt; kurulmuş durumda.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Cmd/Ctrl + Shift + P&lt;/code&gt; yapıp &lt;code&gt;Command Palette&lt;/code&gt;'i açtıktan sonra &lt;code&gt;control&lt;/code&gt; yazıyoruz ve karşımıza yeni yüklenmiş menü öğeleri geliyor.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Package Control" src="images/sublime-package-control.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Package Control" src="images/sublime-package-control.png"&gt;&lt;/p&gt;
 &lt;p&gt;Burada en çok kullanacaklarımız:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Install Packages&lt;/li&gt;
@@ -236,17 +240,17 @@ Done. Your new project is available at /Users/ekinertac/Sites/test/project
 &lt;p&gt;Sublime Text' eklediğiniz klasörlerdeki dosyaların pathlerini tamamlamada kullanılabileceğiniz bir eklenti. Diyelim &lt;code&gt;&amp;lt;img src="&lt;/code&gt; diye yazmaya başladınız, &lt;code&gt;"&lt;/code&gt; karakterini yazdıktan sonra Sublime Text size projenizde bulunan klasörlerin listesini tamamlamak için öneriyor istediğinizi seçip devam edebiliyorsunuz.&lt;/p&gt;
 &lt;h4&gt;AutoPEP8&lt;/h4&gt;
 &lt;p&gt;Yeni keşfettiğim plug'inlerden birisi &lt;strong&gt;AutoPEP8.&lt;/strong&gt; Python diline aşina olanlar PEP8 standartlarını biliyordur mutlaka, normalde PEP8 desteği olan editörler size hatanın olduğu yeri söyler ve düzenlemenizi isterler. Burada durum biraz daha hızlı ceryan ediyor. Açık olan bir python dosyasındayken &lt;code&gt;kntrl/Ctrl + 8&lt;/code&gt;'a bastığınızda yeni bir sayfa açılıyor ve yazdığınız kodun PEP8 ile düzenlenmiş hali diff edilmiş olarak karşınıza geliyor. İkinci bir kısayolda &lt;code&gt;kntrl/Ctrl + Shift + 8&lt;/code&gt; olarak var. Bunu uyguladığınızda ise hiç diff olayına girmeden yazdığınız kodu PEP8 standartlarına göre çok hızlı bir şekilde düzenlemiş oluyor. Çok şahane!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="AutoPEP8" src="images/screen-shot-2013-03-01-at-92753-am.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="AutoPEP8" src="images/screen-shot-2013-03-01-at-92753-am.png"&gt;&lt;/p&gt;
 &lt;h4&gt;Color Highlighter&lt;/h4&gt;
 &lt;p&gt;Color Highlighter eklentisi cursorunuzu hex, rgb ve rgba renklerin üzerine getirdiğinizde alanın backgroundunu o alanda yazılı olan renge çeviriyor. Karışıkmı geldi ? Hemen bir screenshot ile açıklayalım durumu.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Color Highlighter" src="images/screen-shot-2013-03-01-at-93148-am.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Color Highlighter" src="images/screen-shot-2013-03-01-at-93148-am.png"&gt;&lt;/p&gt;
 &lt;h4&gt;ColorPick&lt;/h4&gt;
 &lt;p&gt;ColorPick eklentisi yine renklerle ilgili bir eklenti, herhangi bir döküman açıkken &lt;code&gt;Cmd/Ctrl + Shift + C&lt;/code&gt; tuşlarına bastığınızda, işletim sisteminin default renk paletini getiriyor ve seçtiğiniz rengi, cursorun olduğu yere ekliyor.&lt;/p&gt;
 &lt;iframe src="http://www.screenr.com/embed/XZL7" width="650" height="396" frameborder="0"&gt;&lt;/iframe&gt;
 
 &lt;h4&gt;Djaneiro&lt;/h4&gt;
 &lt;p&gt;Favori eklentilerimden biriside &lt;strong&gt;Djaneiro.&lt;/strong&gt; Html tarafında Django Template taglerini tanıyor, syntax renklendiriyor, tagleri tamamlıyor, Python tarafında keywordleri var onlardada tamamlama yapıyor. Eğer Django üzerinde geliştirme yapıyorsanız olmazsa olmaz bir eklenti. Hemen bir screenshotla şenlenelim.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Djaneiro" src="images/screen-shot-2013-03-01-at-101219-am.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Djaneiro" src="images/screen-shot-2013-03-01-at-101219-am.png"&gt;&lt;/p&gt;
 &lt;p&gt;Django'nun template taglerinin çoğunu destekliyor, &lt;code&gt;if&lt;/code&gt;, &lt;code&gt;else&lt;/code&gt;, &lt;code&gt;endif&lt;/code&gt;, &lt;code&gt;for&lt;/code&gt;, &lt;code&gt;endfor&lt;/code&gt; vs liste uzar gider.&lt;/p&gt;
 &lt;p&gt;Desteklediği tüm snippetlara göz atmak için &lt;strong&gt;Djaneiro&lt;/strong&gt;'nun &lt;strong&gt;&lt;a href="https://github.com/squ1b3r/Djaneiro"&gt;GitHub sayfasına&lt;/a&gt;&lt;/strong&gt; bakabilirsiniz. Çok fazlalar : )&lt;/p&gt;
 &lt;h4&gt;Emmet / Zen Coding&lt;/h4&gt;
@@ -266,25 +270,350 @@ Done. Your new project is available at /Users/ekinertac/Sites/test/project
 &lt;p&gt;Gist eklentiside favorilerimden birisi, bulunduğunuz dosyayı yada dosyada seçmiş olduğunuz bir kod öbeğini, Github'ın Gist servisine göndermenize yarıyor. Public ve private gist yaratabiliyorsunuz, gist.github.com adresindeki size ait olan gistleri browser açmadan alabiliyorsunuz. Gayet kullanışlı. Package Settings'e gidip username ve password girmeniz gerekiyor aksi taktirde oluşturduğunuz gistler &lt;strong&gt;anonymous&lt;/strong&gt; olarak gidiyor github'a.&lt;/p&gt;
 &lt;h4&gt;Git&lt;/h4&gt;
 &lt;p&gt;Git'i tam olarak anlatmak sayfalar alabilir, gayet geniş ve kullanışlı bir plugin, git kullanmak için terminale gitmenize gerek kalmıyor, git ile ilgili hemen herşeyi buradan &lt;strong&gt;Command Palette&lt;/strong&gt; üzerinden halledebiliyorsunuz. Git destekli bir proje klasörünü sublime'a attğınızda Command palette'i açıp git yazarsanız tüm özellikleri zaten geliyor karşınıza.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Git" src="images/screen-shot-2013-03-01-at-111304-am.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Git" src="images/screen-shot-2013-03-01-at-111304-am.png"&gt;&lt;/p&gt;
 &lt;h4&gt;Inc-Dec-Value&lt;/h4&gt;
 &lt;p&gt;Bu eklentide şöyle birşey varmı acaba diyip bulduğum eklentilerden birisi, aynı browser'ların web developer toollarında nasıl rakamları ok tuşlarıyla artırıp azaltabiliyorsak aynısını editör içindede yapabiliyoruz. Eklentiyi kurduktan sonra imleci bir rakamın yanına getirip &lt;code&gt;Alt&lt;/code&gt; tuşuna basıp ok tuşlarıyla yukarı/aşşağı bastığınızda değerin değiştiğini göreceksiniz. Sadece rakamlar için değil tanımlanmış kelimeler içinde geçerli bu eklenti. Ayarlarına gidip daha detaylı şekilde inceleyebilirsiniz&lt;/p&gt;
 &lt;h4&gt;Nettuts+ Fetch&lt;/h4&gt;
 &lt;p&gt;&lt;a href="http://net.tutsplus.com/"&gt;Nettuts+&lt;/a&gt; ekibinin hazırlamış olduğu bu plugin, online dosyaları aynı gist plugininde olduğu gibi bulunduğunuz dosyanın içine getiriyor. Herhangi bir dosya açık değilse boş bir dosya oluşturup verilen linkin kaynak kodunu olduğu gibi alıyor. Linkleri düzenlemek ve paketleri indirebilmek gibi işe yarayan özellikleri var.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Fetch" src="images/screen-shot-2013-03-01-at-112215-am.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Fetch" src="images/screen-shot-2013-03-01-at-112215-am.png"&gt;&lt;/p&gt;
 &lt;h4&gt;Sidebar Enhancements&lt;/h4&gt;
 &lt;p&gt;Sublime Text'in en büyük eksiğini kapatıyor. Soldaki sidebar'a eklediğiniz dosyalara sağ tıkladığınızda açılan menüde baya hiç bişey yok çünkü. Eklentiyi yüklemeden önceki ve yükledikten sonraki görünümleri çok farklı.&lt;/p&gt;
 &lt;p&gt;Aradaki fark şöyle:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Sidebar Enhancements" src="images/screen-shot-2013-03-01-at-113226-am.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sidebar Enhancements" src="images/screen-shot-2013-03-01-at-113226-am.png"&gt;&lt;/p&gt;
 &lt;p&gt;Tahmin edebileceğiniz gibi sağdaki eklenti yüklendikten sonraki hali : )&lt;/p&gt;
 &lt;h4&gt;Pretty JSON&lt;/h4&gt;
 &lt;p&gt;Adından da belli olduğu gibi syntax düzeni bozuk olan &lt;strong&gt;json&lt;/strong&gt; dosyalarını düzenlemek için kullanıyorum. &lt;code&gt;kntrl/Ctrl + J&lt;/code&gt; ısayolu ile çalışıyor, tertemiz json veriyor size.&lt;/p&gt;
 &lt;p&gt;Kullandığım paketler şimdlik bunlar yeni eklediğim bir paket olursa yazıyı güncellerim.&lt;/p&gt;
 &lt;p&gt;Bunlara ek olarak yine Package Control içinde sonradan eklenecek olan dillerin syntax highlighterları var, benim kullandıklarım &lt;code&gt;Less, Stylus, Jade, nginx, SCSS&lt;/code&gt; gibi yeni olan diller. Arasında kullandığınız varsa onlarıda yüklerseniz tadından yenmez Sublime Text.&lt;/p&gt;
 &lt;p&gt;Farklı eklentileri ve benim kullandıklarımdan daha iyisi var diyorsanız yorumlarda dört gözle bekliyorum.&lt;/p&gt;
-&lt;p&gt;Kaynak Site : &lt;a href="http://ekinertac.com/sublime-text.html"&gt;http://www.ekinertac.com/sublime-text.html&lt;/a&gt; &lt;/p&gt;</summary><category term="sublime text"></category><category term="text editor"></category></entry><entry><title>About - Ben Kimim</title><link href="http://caylakpenguen.github.io/about.html" rel="alternate"></link><published>2016-12-12T23:23:00+01:00</published><updated>2016-12-12T23:23:00+01:00</updated><author><name>caylak</name></author><id>tag:caylakpenguen.github.io,2016-12-12:about.html</id><summary type="html">&lt;h3&gt;Ben kimim.&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Çaylak Penguen Truva Linux Geliştiricisi.
+&lt;p&gt;Kaynak Site : &lt;a href="http://ekinertac.com/sublime-text.html"&gt;http://www.ekinertac.com/sublime-text.html&lt;/a&gt; &lt;/p&gt;</content><category term="sublime text"></category><category term="text editor"></category></entry><entry><title>About - Ben Kimim</title><link href="http://caylakpenguen.github.io/about.html" rel="alternate"></link><published>2016-12-12T23:23:00+01:00</published><updated>2016-12-12T23:23:00+01:00</updated><author><name>caylak</name></author><id>tag:caylakpenguen.github.io,2016-12-12:/about.html</id><summary type="html">&lt;h3&gt;Ben kimim.&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Çaylak Penguen
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;a href="http://www.truvalinux.org.tr"&gt;Truva Linux Web Sitesi&lt;/a&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="blog"></category></entry></feed>
+&lt;p&gt;&lt;a href="http://www.truvalinux.org.tr"&gt;Truva Linux Web Sitesi&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Ben kimim.&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Çaylak Penguen
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://www.truvalinux.org.tr"&gt;Truva Linux Web Sitesi&lt;/a&gt;&lt;/p&gt;</content><category term="pelican"></category><category term="blog"></category></entry><entry><title>My first post with pelican octopress theme</title><link href="http://caylakpenguen.github.io/my-first-post-with-pelican-octopress-theme.html" rel="alternate"></link><published>2014-04-03T00:00:00+02:00</published><updated>2014-04-03T00:00:00+02:00</updated><author><name>caylak</name></author><id>tag:caylakpenguen.github.io,2014-04-03:/my-first-post-with-pelican-octopress-theme.html</id><summary type="html">&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
+
+&lt;p&gt;Not a big fan of blog, but I was really fascinated by this idea of having a
+static microblog site which is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;written in plain text with your preferred markup language&lt;/li&gt;
+&lt;li&gt;generated and themed on-the-fly&lt;/li&gt;
+&lt;li&gt;version controlled by git&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While &lt;a href="http://jekyllrb.com"&gt;Jekyll&lt;/a&gt; and &lt;a href="http://octopress.org"&gt;Octopress&lt;/a&gt; are
+two such excellent tools, they are …&lt;/p&gt;</summary><content type="html">&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
+
+&lt;p&gt;Not a big fan of blog, but I was really fascinated by this idea of having a
+static microblog site which is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;written in plain text with your preferred markup language&lt;/li&gt;
+&lt;li&gt;generated and themed on-the-fly&lt;/li&gt;
+&lt;li&gt;version controlled by git&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While &lt;a href="http://jekyllrb.com"&gt;Jekyll&lt;/a&gt; and &lt;a href="http://octopress.org"&gt;Octopress&lt;/a&gt; are
+two such excellent tools, they are all written in Ruby, which I'm not quite
+familiar with.  I was not able to find a Python equivalent tool until not very
+long ago I found &lt;a href="http://jakevdp.github.io"&gt;Jake's blog&lt;/a&gt;.  It was well themed
+and all the articles are great to read.  I can't refrain the idea of having
+a similar blog site of my own.  It turned out to be not very complicated, I
+am using Ubuntu and followed the steps below.&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h3&gt;Install prerequisites:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://getpelican.com"&gt;pelican&lt;/a&gt; - a python based static site generator&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://https://help.github.com/articles/markdown-basics"&gt;markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install pip
+$ sudo pip install pelican
+$ sudo pip install markdown
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Install octopress theme for pelican&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/duilio/pelican-octopress-theme
+$ sudo pelican-themes -i pelican-octopress-theme pelican-octopress-theme/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;&lt;a href="http://docs.getpelican.com/en/3.3.0/getting_started.html"&gt;Kickstart&lt;/a&gt; the site with pelican&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pelican-quickstart 
+Welcome to pelican-quickstart v3.3.0.
+
+This script will &lt;span class="nb"&gt;help&lt;/span&gt; you create a new Pelican-based website.
+
+Please answer the following questions so this script can generate the files
+needed by Pelican.
+
+
+&amp;gt; Where &lt;span class="k"&gt;do&lt;/span&gt; you want to create your new web site? &lt;span class="o"&gt;[&lt;/span&gt;.&lt;span class="o"&gt;]&lt;/span&gt; 
+&amp;gt; What will be the title of this web site? Another Code Farmer&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;s Backyard
+&amp;gt; Who will be the author of this web site? Eric Miao
+&amp;gt; What will be the default language of this web site? &lt;span class="o"&gt;[&lt;/span&gt;en&lt;span class="o"&gt;]&lt;/span&gt; 
+&amp;gt; Do you want to specify a URL prefix? e.g., http://example.com   &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; n
+&amp;gt; Do you want to &lt;span class="nb"&gt;enable&lt;/span&gt; article pagination? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; n
+&amp;gt; Do you want to generate a Fabfile/Makefile to automate generation and publishing? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; 
+&amp;gt; Do you want an auto-reload &lt;span class="p"&gt;&amp;amp;&lt;/span&gt; simpleHTTP script to assist with theme and site development? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt; 
+&amp;gt; Do you want to upload your website using FTP? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; 
+&amp;gt; Do you want to upload your website using SSH? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; 
+&amp;gt; Do you want to upload your website using Dropbox? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; 
+&amp;gt; Do you want to upload your website using S3? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; 
+&amp;gt; Do you want to upload your website using Rackspace Cloud Files? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Voila! Create your first article&lt;/h3&gt;
+&lt;p&gt;Creating a plain text file in the folder of &lt;code&gt;content&lt;/code&gt;, name the file in format
+&lt;code&gt;yyyy-mm-dd-&amp;lt;post-topic&amp;gt;.md&lt;/code&gt;.  For &lt;a href="http://docs.getpelican.com/en/3.3.0/getting_started.html#writing-content-using-pelican"&gt;example&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;My&lt;/span&gt; &lt;span class="kd"&gt;super&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;
+&lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2010&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;03&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;
+&lt;span class="n"&gt;Category&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt;
+&lt;span class="n"&gt;Tags&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;publishing&lt;/span&gt;
+&lt;span class="n"&gt;Slug&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="kd"&gt;super&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;post&lt;/span&gt;
+&lt;span class="n"&gt;Author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Alexis&lt;/span&gt; &lt;span class="n"&gt;Metaireau&lt;/span&gt;
+&lt;span class="n"&gt;Summary&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Short&lt;/span&gt; &lt;span class="n"&gt;version&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;feeds&lt;/span&gt;
+
+&lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt; &lt;span class="kd"&gt;super&lt;/span&gt; &lt;span class="n"&gt;blog&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Change pelicanconf.py to use octopress theme:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gh"&gt;diff --git a/pelicanconf.py b/pelicanconf.py&lt;/span&gt;
+&lt;span class="gh"&gt;index 590c26d..c6b05d1 100644&lt;/span&gt;
+&lt;span class="gd"&gt;--- a/pelicanconf.py&lt;/span&gt;
+&lt;span class="gi"&gt;+++ b/pelicanconf.py&lt;/span&gt;
+&lt;span class="gu"&gt;@@ -29,3 +29,5 @@ DEFAULT_PAGINATION = False&lt;/span&gt;
+
+ # Uncomment following line if you want document-relative URLs when developing
+ #RELATIVE_URLS = True
+&lt;span class="gi"&gt;+&lt;/span&gt;
+&lt;span class="gi"&gt;+THEME = &amp;#39;pelican-octopress-theme&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Generate and check the site:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make html
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; output &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; python -m SimpleHTTPServer
+Serving HTTP on &lt;span class="m"&gt;0&lt;/span&gt;.0.0.0 port &lt;span class="m"&gt;8000&lt;/span&gt; ...
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Deploy when satisfied&lt;/h3&gt;
+&lt;p&gt;For example, &lt;a href="http://pages.github.com/"&gt;github pages&lt;/a&gt; is a good choice.&lt;/p&gt;</content></entry><entry><title>"Serving multiple Django applications with Nginx and Gunicorn"</title><link href="http://caylakpenguen.github.io/serving-multiple-django-applications-with-nginx-and-gunicorn.html" rel="alternate"></link><published>2013-10-29T00:00:00+01:00</published><updated>2013-10-29T00:00:00+01:00</updated><author><name>caylak</name></author><id>tag:caylakpenguen.github.io,2013-10-29:/serving-multiple-django-applications-with-nginx-and-gunicorn.html</id><summary type="html">&lt;p&gt;Nginx makes a great server for your Gunicorn-powered Django applications. In this article I will demonstrate how you can run multiple Django applications on the same Nginx server, hosting sites on two different domains. Each application will be set up in its own Virtualenv and each will be owned by …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Nginx makes a great server for your Gunicorn-powered Django applications. In this article I will demonstrate how you can run multiple Django applications on the same Nginx server, hosting sites on two different domains. Each application will be set up in its own Virtualenv and each will be owned by and run as a different user to limit consequences of a potential security breach.&lt;/p&gt;
+&lt;!-- more --&gt;
+
+&lt;h3&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;This artcle is a continuation of &lt;a href="/blog/2013/06/09/django-nginx-gunicorn-virtualenv-supervisor/" title="Setting up Django with Nginx, Gunicorn, virtualenv, supervisor and PostgreSQL"&gt;a previous article on setting up Django with Nginx and Gunicorn&lt;/a&gt;. You should start by following instructions in &lt;a href="/blog/2013/06/09/django-nginx-gunicorn-virtualenv-supervisor/" title="Setting up Django with Nginx, Gunicorn, virtualenv, supervisor and PostgreSQL"&gt;that article&lt;/a&gt; and prepare a server with the following components:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nginx&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;li&gt;Virtualenv&lt;/li&gt;
+&lt;li&gt;Supervisor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our goal in this article will be to create two applications, one called Hello and one called Goodbye. The former will be served under the address http://hello.test and the latter http://goodbye.test&lt;/p&gt;
+&lt;h3&gt;Create a virtual environment for each app&lt;/h3&gt;
+&lt;p&gt;In order to keep your apps independent, each will run in its own virtual environment. Create an environment for each application using the &lt;code&gt;virtualenv&lt;/code&gt; command. In each environment install Django, Gunicorn, the application itself and its other dependencies. Follow steps described in &lt;a href="/blog/2013/06/09/django-nginx-gunicorn-virtualenv-supervisor/" title="Setting up Django with Nginx, Gunicorn, virtualenv, supervisor and PostgreSQL"&gt;my previous article&lt;/a&gt; for each app.&lt;/p&gt;
+&lt;p&gt;Let's say that for our &lt;code&gt;hello&lt;/code&gt; and &lt;code&gt;goodbye&lt;/code&gt; applications we would create environments in &lt;code&gt;/webapps/hello_django&lt;/code&gt; and &lt;code&gt;/webapps/goodbye_django&lt;/code&gt; respectively. We would get a directory structure containing the following entries:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/webapps/
+├── hello_django                &amp;lt;= virtualenv for the application Hello
+│   ├── bin
+│   │   ├── activate
+│   │   ├── gunicorn            &amp;lt;= Hello app&amp;#39;s gunicorn
+│   │   ├── gunicorn_start      &amp;lt;= Hello app&amp;#39;s gunicorn start script
+│   │   └── python
+│   ├── hello                   &amp;lt;= Hello app&amp;#39;s Django project directory
+│   │   └── hello
+│   │       ├── settings.py     &amp;lt;= hello.settings
+│   │       └── wsgi.py         &amp;lt;= hello.wsgi
+│   ├── logs                    &amp;lt;= Hello app&amp;#39;s logs will be saved here
+│   ├── media
+│   ├── run                     &amp;lt;= Gunicorn&amp;#39;s socket file will be placed here
+│   └── static
+└── goodbye_django              &amp;lt;= analogous virtualenv for the application Goodbye
+    ├── bin
+    │   ├── activate
+    │   ├── gunicorn
+    │   ├── gunicorn_start
+    │   └── python
+    ├── goodbye
+    │   └── goodbye
+    │       ├── settings.py
+    │       └── wsgi.py
+    ├── logs
+    ├── media
+    ├── run
+    └── static
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Create system accounts for the webapps&lt;/h3&gt;
+&lt;p&gt;Even though Django has a pretty good &lt;a href="http://django.readthedocs.org/en/latest/releases/security.html" title="Archive of Django security issues"&gt;security track record&lt;/a&gt;, web applications can become compromised. In order to make running multiple applications safer we'll create a separate system user account for each application. The apps will run on our system with the privileges of those special users. Even if one application became compromised, an attacker would only be able to take over the part of your system available to the hacked application.&lt;/p&gt;
+&lt;p&gt;Create system users named &lt;code&gt;hello&lt;/code&gt; and &lt;code&gt;goodbye&lt;/code&gt; and assign them to a system group called &lt;code&gt;webapps&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo groupadd --system webapps
+$ sudo useradd --system --gid webapps --home /webapps/hello_django hello 
+$ sudo useradd --system --gid webapps --home /webapps/goodbye_django goodbye
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now change the owner of files in each application's folder. I like to assign the group &lt;code&gt;users&lt;/code&gt; as the owner, because that allows regular users of the server to access and modify parts of the application which are group-writable. This is optional.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo chown -R hello:users /webapps/hello_django
+$ sudo chown -R goodbye:users /webapps/goodbye_django
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Create Gunicorn start scripts&lt;/h3&gt;
+&lt;p&gt;For each application create a simple shell script based on my &lt;a href="https://gist.github.com/postrational/5747293#file-gunicorn_start-bash" title="gunicorn_start.bash"&gt;gunicorn_start&lt;/a&gt; template. The scripts differ only in the values of variables which they set. &lt;/p&gt;
+&lt;p&gt;For the Hello app, set the following values in &lt;code&gt;/webapps/hello_django/bin/gunicorn_start&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;```bash /webapps/hello_django/bin/gunicorn_start
+(...)
+NAME="hello_app"                                  # Name of the application
+DJANGODIR=/webapps/hello_django/hello             # Django project directory
+SOCKFILE=/webapps/hello_django/run/gunicorn.sock  # we will communicte using this unix socket
+USER=hello                                        # the user to run as
+GROUP=webapps                                     # the group to run as
+NUM_WORKERS=3                                     # how many worker processes should Gunicorn spawn
+DJANGO_SETTINGS_MODULE=hello.settings             # which settings file should Django use
+DJANGO_WSGI_MODULE=hello.wsgi                     # WSGI module name
+(...)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;And for the Goodbye app by analogy:
+
+```bash /webapps/goodbye_django/bin/gunicorn_start
+(...)
+NAME=&amp;quot;goodbye_app&amp;quot;                                  # Name of the application
+DJANGODIR=/webapps/goodbye_django/goodbye           # Django project directory
+SOCKFILE=/webapps/goodbye_django/run/gunicorn.sock  # we will communicte using this unix socket
+USER=goodbye                                        # the user to run as
+GROUP=webapps                                       # the group to run as
+NUM_WORKERS=3                                       # how many worker processes should Gunicorn spawn
+DJANGO_SETTINGS_MODULE=goodbye.settings             # which settings file should Django use
+DJANGO_WSGI_MODULE=goodbye.wsgi                     # WSGI module name
+(...)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Create Supervisor configuration files and start the apps&lt;/h3&gt;
+&lt;p&gt;Next, create a Supervisor configuration for each application. Add a file for each app to the &lt;code&gt;/etc/supervisor/conf.d&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;One for Hello:&lt;/p&gt;
+&lt;p&gt;```ini /etc/supervisor/conf.d/hello.conf
+[program:hello]
+command = /webapps/hello_django/bin/gunicorn_start                    ; Command to start app
+user = hello                                                          ; User to run as
+stdout_logfile = /webapps/hello_django/logs/gunicorn_supervisor.log   ; Where to write log messages
+redirect_stderr = true                                                ; Save stderr in the same log&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;And one for Goodbye:
+
+```ini /etc/supervisor/conf.d/goodbye.conf
+[program:goodbye]
+command = /webapps/goodbye_django/bin/gunicorn_start                    ; Command to start app
+user = goodbye                                                          ; User to run as
+stdout_logfile = /webapps/goodbye_django/logs/gunicorn_supervisor.log   ; Where to write log messages
+redirect_stderr = true                                                  ; Save stderr in the same log
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Reread the configuration files and update Supervisor to start the apps:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo supervisorctl reread
+$ sudo supervisorctl update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can also start them manually, if you prefer:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo supervisorctl start hello
+$ sudo supervisorctl start goodbye
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Create Nginx virtual servers&lt;/h3&gt;
+&lt;p&gt;Finally we can create virtual server configurations for each app based on &lt;a href="https://gist.github.com/postrational/5747293#file-hello-nginxconf" title="Nginx virtual server configuration template"&gt;this template&lt;/a&gt;. These will be stored in &lt;code&gt;/etc/nginx/sites-available&lt;/code&gt; and then activated by links in &lt;code&gt;/etc/nginx/sites-enabled&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;```nginx /etc/nginx/sites-available/hello
+upstream hello_app_server {
+  server unix:/webapps/hello_django/run/gunicorn.sock fail_timeout=0;
+}&lt;/p&gt;
+&lt;p&gt;server {
+    listen   80;
+    server_name hello.test;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;client_max_body_size&lt;/span&gt; &lt;span class="nt"&gt;4G&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+
+&lt;span class="nt"&gt;access_log&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;webapps&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;hello_django&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;logs&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;nginx-access&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;log&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;error_log&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;webapps&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;hello_django&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;logs&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;nginx-error&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;log&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+
+&lt;span class="nt"&gt;location&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;static&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="err"&gt;alias&lt;/span&gt;   &lt;span class="err"&gt;/webapps/hello_django/static/&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;location&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;media&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="err"&gt;alias&lt;/span&gt;   &lt;span class="err"&gt;/webapps/hello_django/media/&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;location&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="err"&gt;proxy_set_header&lt;/span&gt; &lt;span class="err"&gt;X-Forwarded-For&lt;/span&gt; &lt;span class="err"&gt;$proxy_add_x_forwarded_for&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;proxy_set_header&lt;/span&gt; &lt;span class="err"&gt;Host&lt;/span&gt; &lt;span class="err"&gt;$http_host&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;proxy_redirect&lt;/span&gt; &lt;span class="err"&gt;off&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;if&lt;/span&gt; &lt;span class="err"&gt;(!-f&lt;/span&gt; &lt;span class="err"&gt;$request_filename)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+        &lt;span class="err"&gt;proxy_pass&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;hello_app_server&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;```&lt;/span&gt;&lt;span class="nt"&gt;nginx&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;nginx&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;sites-available&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;goodbye&lt;/span&gt;
+&lt;span class="nt"&gt;upstream&lt;/span&gt; &lt;span class="nt"&gt;goodbye_app_server&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="err"&gt;server&lt;/span&gt; &lt;span class="n"&gt;unix&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;webapps&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;goodbye_django&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gunicorn&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sock&lt;/span&gt; &lt;span class="n"&gt;fail_timeout&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;server&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="err"&gt;listen&lt;/span&gt;   &lt;span class="err"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;server_name&lt;/span&gt; &lt;span class="err"&gt;goodbye.test&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="err"&gt;client_max_body_size&lt;/span&gt; &lt;span class="err"&gt;4G&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="err"&gt;access_log&lt;/span&gt; &lt;span class="err"&gt;/webapps/goodbye_django/logs/nginx-access.log&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;error_log&lt;/span&gt; &lt;span class="err"&gt;/webapps/goodbye_django/logs/nginx-error.log&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="err"&gt;location&lt;/span&gt; &lt;span class="err"&gt;/static/&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+        &lt;span class="err"&gt;alias&lt;/span&gt;   &lt;span class="err"&gt;/webapps/goodbye_django/static/&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="nt"&gt;location&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;media&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="err"&gt;alias&lt;/span&gt;   &lt;span class="err"&gt;/webapps/goodbye_django/media/&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="nt"&gt;location&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="err"&gt;proxy_set_header&lt;/span&gt; &lt;span class="err"&gt;X-Forwarded-For&lt;/span&gt; &lt;span class="err"&gt;$proxy_add_x_forwarded_for&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;proxy_set_header&lt;/span&gt; &lt;span class="err"&gt;Host&lt;/span&gt; &lt;span class="err"&gt;$http_host&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;proxy_redirect&lt;/span&gt; &lt;span class="err"&gt;off&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;if&lt;/span&gt; &lt;span class="err"&gt;(!-f&lt;/span&gt; &lt;span class="err"&gt;$request_filename)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+            &lt;span class="err"&gt;proxy_pass&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;goodbye_app_server&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="err"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="err"&gt;}&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Enable the virtual servers and restart Nginx:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo ln -s /etc/nginx/sites-available/hello /etc/nginx/sites-enabled/hello
+$ sudo ln -s /etc/nginx/sites-available/goodbye /etc/nginx/sites-enabled/goodbye
+$ sudo service nginx restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Test the virtual servers&lt;/h3&gt;
+&lt;p&gt;Now let's point each domain to our server for testing purposes. Making actual changes to the Domain Name System is usually among the final steps when working in production, performed after all tests are completed. For testing you can simulate the DNS changes by adding an entry to the &lt;code&gt;/etc/hosts&lt;/code&gt; file of a computer from which you will be connecting to your server (your laptop for example).&lt;/p&gt;
+&lt;p&gt;Say you want to serve Django applications under the domains &lt;code&gt;hello.test&lt;/code&gt; and &lt;code&gt;goodbye.test&lt;/code&gt; from a server with the IP address of &lt;code&gt;10.10.10.200&lt;/code&gt;. You can simulate the appropriate DNS entries locally on your PC by putting the following line into your &lt;code&gt;/etc/hosts&lt;/code&gt; file. On Windows the file is &lt;a href="http://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system" title="hosts (file) Location in the file system - Wikipedia"&gt;conveniently hidden&lt;/a&gt; in &lt;code&gt;%SystemRoot%\system32\drivers\etc\hosts&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;text /etc/hosts
+(...)
+10.10.10.200    hello.test goodbye.test&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can now navigate to each domain from your PC to test that each app on the server is working correctly:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;http://hello.test&lt;/li&gt;
+&lt;li&gt;http://goodbye.test&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Good luck!&lt;/p&gt;</content><category term="django nginx gunicorn virtualenv supervisord"></category></entry></feed>

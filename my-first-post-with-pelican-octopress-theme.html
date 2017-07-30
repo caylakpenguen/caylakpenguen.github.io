@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>My first post with pelican octopress theme &mdash; Caylak Pelikan Blog</title>
+  <meta name="author" content="caylak">
+
+  <link href="http://caylakpenguen.github.io/rss.xml" type="application/rss+xml" rel="alternate"
+        title="Caylak Pelikan Blog RSS Feed" />
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="http://caylakpenguen.github.io/favicon.ico" rel="icon">
+
+  <link href="http://caylakpenguen.github.io/theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="http://caylakpenguen.github.io/">Caylak Pelikan Blog</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://caylakpenguen.github.io/rss.xml" rel="subscribe-rss">RSS</a></li>
+</ul>
+
+
+<ul class="main-navigation">
+    <li><a href="http://caylakpenguen.github.io/archives.html">Archives</a></li>
+      <li >
+        <a href="http://caylakpenguen.github.io/category/blog.html">Blog</a>
+      </li>
+      <li class="active">
+        <a href="http://caylakpenguen.github.io/category/misc.html">Misc</a>
+      </li>
+      <li >
+        <a href="http://caylakpenguen.github.io/category/pelican.html">Pelican</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">My first post with pelican octopress theme</h1>
+    <p class="meta">
+<time datetime="2014-04-03T00:00:00+02:00" pubdate>Prş 03 Nisan 2014</time>    </p>
+</header>
+
+  <div class="entry-content"><!-- PELICAN_BEGIN_SUMMARY -->
+
+<p>Not a big fan of blog, but I was really fascinated by this idea of having a
+static microblog site which is:</p>
+<ul>
+<li>written in plain text with your preferred markup language</li>
+<li>generated and themed on-the-fly</li>
+<li>version controlled by git</li>
+</ul>
+<p>While <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://octopress.org">Octopress</a> are
+two such excellent tools, they are all written in Ruby, which I'm not quite
+familiar with.  I was not able to find a Python equivalent tool until not very
+long ago I found <a href="http://jakevdp.github.io">Jake's blog</a>.  It was well themed
+and all the articles are great to read.  I can't refrain the idea of having
+a similar blog site of my own.  It turned out to be not very complicated, I
+am using Ubuntu and followed the steps below.</p>
+<!-- PELICAN_END_SUMMARY -->
+
+<h3>Install prerequisites:</h3>
+<ul>
+<li><a href="http://getpelican.com">pelican</a> - a python based static site generator</li>
+<li><a href="http://https://help.github.com/articles/markdown-basics">markdown</a></li>
+</ul>
+<div class="highlight"><pre><span></span>$ sudo apt-get install pip
+$ sudo pip install pelican
+$ sudo pip install markdown
+</pre></div>
+
+
+<h3>Install octopress theme for pelican</h3>
+<div class="highlight"><pre><span></span>$ git clone https://github.com/duilio/pelican-octopress-theme
+$ sudo pelican-themes -i pelican-octopress-theme pelican-octopress-theme/
+</pre></div>
+
+
+<h3><a href="http://docs.getpelican.com/en/3.3.0/getting_started.html">Kickstart</a> the site with pelican</h3>
+<div class="highlight"><pre><span></span>$ pelican-quickstart 
+Welcome to pelican-quickstart v3.3.0.
+
+This script will <span class="nb">help</span> you create a new Pelican-based website.
+
+Please answer the following questions so this script can generate the files
+needed by Pelican.
+
+
+&gt; Where <span class="k">do</span> you want to create your new web site? <span class="o">[</span>.<span class="o">]</span> 
+&gt; What will be the title of this web site? Another Code Farmer<span class="err">&#39;</span>s Backyard
+&gt; Who will be the author of this web site? Eric Miao
+&gt; What will be the default language of this web site? <span class="o">[</span>en<span class="o">]</span> 
+&gt; Do you want to specify a URL prefix? e.g., http://example.com   <span class="o">(</span>Y/n<span class="o">)</span> n
+&gt; Do you want to <span class="nb">enable</span> article pagination? <span class="o">(</span>Y/n<span class="o">)</span> n
+&gt; Do you want to generate a Fabfile/Makefile to automate generation and publishing? <span class="o">(</span>Y/n<span class="o">)</span> 
+&gt; Do you want an auto-reload <span class="p">&amp;</span> simpleHTTP script to assist with theme and site development? <span class="o">(</span>Y/n<span class="o">)</span> 
+&gt; Do you want to upload your website using FTP? <span class="o">(</span>y/N<span class="o">)</span> 
+&gt; Do you want to upload your website using SSH? <span class="o">(</span>y/N<span class="o">)</span> 
+&gt; Do you want to upload your website using Dropbox? <span class="o">(</span>y/N<span class="o">)</span> 
+&gt; Do you want to upload your website using S3? <span class="o">(</span>y/N<span class="o">)</span> 
+&gt; Do you want to upload your website using Rackspace Cloud Files? <span class="o">(</span>y/N<span class="o">)</span> 
+</pre></div>
+
+
+<h3>Voila! Create your first article</h3>
+<p>Creating a plain text file in the folder of <code>content</code>, name the file in format
+<code>yyyy-mm-dd-&lt;post-topic&gt;.md</code>.  For <a href="http://docs.getpelican.com/en/3.3.0/getting_started.html#writing-content-using-pelican">example</a>:</p>
+<div class="highlight"><pre><span></span><span class="n">Title</span><span class="o">:</span> <span class="n">My</span> <span class="kd">super</span> <span class="n">title</span>
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2010</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">03</span> <span class="mi">10</span><span class="o">:</span><span class="mi">20</span>
+<span class="n">Category</span><span class="o">:</span> <span class="n">Python</span>
+<span class="n">Tags</span><span class="o">:</span> <span class="n">pelican</span><span class="o">,</span> <span class="n">publishing</span>
+<span class="n">Slug</span><span class="o">:</span> <span class="n">my</span><span class="o">-</span><span class="kd">super</span><span class="o">-</span><span class="n">post</span>
+<span class="n">Author</span><span class="o">:</span> <span class="n">Alexis</span> <span class="n">Metaireau</span>
+<span class="n">Summary</span><span class="o">:</span> <span class="n">Short</span> <span class="n">version</span> <span class="k">for</span> <span class="n">index</span> <span class="n">and</span> <span class="n">feeds</span>
+
+<span class="n">This</span> <span class="k">is</span> <span class="n">the</span> <span class="n">content</span> <span class="n">of</span> <span class="n">my</span> <span class="kd">super</span> <span class="n">blog</span> <span class="n">post</span><span class="o">.</span>
+</pre></div>
+
+
+<h3>Change pelicanconf.py to use octopress theme:</h3>
+<div class="highlight"><pre><span></span><span class="gh">diff --git a/pelicanconf.py b/pelicanconf.py</span>
+<span class="gh">index 590c26d..c6b05d1 100644</span>
+<span class="gd">--- a/pelicanconf.py</span>
+<span class="gi">+++ b/pelicanconf.py</span>
+<span class="gu">@@ -29,3 +29,5 @@ DEFAULT_PAGINATION = False</span>
+
+ # Uncomment following line if you want document-relative URLs when developing
+ #RELATIVE_URLS = True
+<span class="gi">+</span>
+<span class="gi">+THEME = &#39;pelican-octopress-theme&#39;</span>
+</pre></div>
+
+
+<h3>Generate and check the site:</h3>
+<div class="highlight"><pre><span></span>$ make html
+$ <span class="nb">cd</span> output <span class="o">&amp;&amp;</span> python -m SimpleHTTPServer
+Serving HTTP on <span class="m">0</span>.0.0.0 port <span class="m">8000</span> ...
+</pre></div>
+
+
+<h3>Deploy when satisfied</h3>
+<p>For example, <a href="http://pages.github.com/">github pages</a> is a good choice.</p></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        caylak
+    </span>
+  </span>
+<time datetime="2014-04-03T00:00:00+02:00" pubdate>Prş 03 Nisan 2014</time>  <span class="categories">
+    <a class='category' href='http://caylakpenguen.github.io/category/misc.html'>misc</a>
+  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="http://caylakpenguen.github.io/pelican-a-gecis.html">Pelican'a geçiş</a>
+      </li>
+      <li class="post">
+          <a href="http://caylakpenguen.github.io/sublime-text.html">Sublime Text</a>
+      </li>
+      <li class="post">
+          <a href="http://caylakpenguen.github.io/about.html">About - Ben Kimim</a>
+      </li>
+      <li class="post">
+          <a href="http://caylakpenguen.github.io/my-first-post-with-pelican-octopress-theme.html">My first post with pelican octopress theme</a>
+      </li>
+      <li class="post">
+          <a href="http://caylakpenguen.github.io/serving-multiple-django-applications-with-nginx-and-gunicorn.html">"Serving multiple Django applications with Nginx and Gunicorn"</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="http://caylakpenguen.github.io/category/blog.html">blog</a></li>
+        <li><a href="http://caylakpenguen.github.io/category/misc.html">misc</a></li>
+        <li><a href="http://caylakpenguen.github.io/category/pelican.html">pelican</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="http://caylakpenguen.github.io/tag/pelican.html">pelican</a>,    <a href="http://caylakpenguen.github.io/tag/python.html">python</a>,    <a href="http://caylakpenguen.github.io/tag/sublime-text.html">sublime text</a>,    <a href="http://caylakpenguen.github.io/tag/blog.html">blog</a>,    <a href="http://caylakpenguen.github.io/tag/django-nginx-gunicorn-virtualenv-supervisord.html">django nginx gunicorn virtualenv supervisord</a>,    <a href="http://caylakpenguen.github.io/tag/text-editor.html">text editor</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="http://caylakpenguen.github.io/rss.xml" type="application/rss+xml" rel="alternate">RSS</a></li>
+            <li><a href="http://twitter.com/caylakpenguen" target="_blank">twitter</a></li>
+            <li><a href="http://flickr.com/" target="_blank">flickr</a></li>
+            <li><a href="http://facebook.com/" target="_blank">facebook</a></li>
+            <li><a href="http://github.com/caylakpenguen" target="_blank">github</a></li>
+            <li><a href="https://plus.google.com/" target="_blank">google-plus</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://www.truvalinux.org.tr/" target="_blank">Truva Linux</a></li>
+            <li><a href="http://getgnu.org/" target="_blank">getGNU</a></li>
+            <li><a href="http://caylak.truvalinux.org.tr" target="_blank">Caylak Blog</a></li>
+            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+            <li><a href="#" target="_blank">You can modify those links in your config file</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright &copy;  2013&ndash;2016  caylak &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+  <span class="credit">Powered by <a href="https://github.com/duilio/pelican-octopress-theme">Octopress Theme for Pelican</a></span>
+</p></footer>
+  <script src="http://caylakpenguen.github.io/theme/js/modernizr-2.0.js"></script>
+  <script src="http://caylakpenguen.github.io/theme/js/ender.js"></script>
+  <script src="http://caylakpenguen.github.io/theme/js/octopress.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Caylak Pelikan Blog - misc</title><link>http://caylakpenguen.github.io/</link><description></description><lastBuildDate>Thu, 03 Apr 2014 00:00:00 +0200</lastBuildDate><item><title>My first post with pelican octopress theme</title><link>http://caylakpenguen.github.io/my-first-post-with-pelican-octopress-theme.html</link><description>&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
+
+&lt;p&gt;Not a big fan of blog, but I was really fascinated by this idea of having a
+static microblog site which is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;written in plain text with your preferred markup language&lt;/li&gt;
+&lt;li&gt;generated and themed on-the-fly&lt;/li&gt;
+&lt;li&gt;version controlled by git&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While &lt;a href="http://jekyllrb.com"&gt;Jekyll&lt;/a&gt; and &lt;a href="http://octopress.org"&gt;Octopress&lt;/a&gt; are
+two such excellent tools, they are …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">caylak</dc:creator><pubDate>Thu, 03 Apr 2014 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:caylakpenguen.github.io,2014-04-03:/my-first-post-with-pelican-octopress-theme.html</guid></item><item><title>"Serving multiple Django applications with Nginx and Gunicorn"</title><link>http://caylakpenguen.github.io/serving-multiple-django-applications-with-nginx-and-gunicorn.html</link><description>&lt;p&gt;Nginx makes a great server for your Gunicorn-powered Django applications. In this article I will demonstrate how you can run multiple Django applications on the same Nginx server, hosting sites on two different domains. Each application will be set up in its own Virtualenv and each will be owned by …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">caylak</dc:creator><pubDate>Tue, 29 Oct 2013 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:caylakpenguen.github.io,2013-10-29:/serving-multiple-django-applications-with-nginx-and-gunicorn.html</guid><category>django nginx gunicorn virtualenv supervisord</category></item></channel></rss>

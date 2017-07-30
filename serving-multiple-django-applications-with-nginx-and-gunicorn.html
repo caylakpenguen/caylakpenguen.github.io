@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>"Serving multiple Django applications with Nginx and Gunicorn" &mdash; Caylak Pelikan Blog</title>
+  <meta name="author" content="caylak">
+
+  <link href="http://caylakpenguen.github.io/rss.xml" type="application/rss+xml" rel="alternate"
+        title="Caylak Pelikan Blog RSS Feed" />
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="http://caylakpenguen.github.io/favicon.ico" rel="icon">
+
+  <link href="http://caylakpenguen.github.io/theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="http://caylakpenguen.github.io/">Caylak Pelikan Blog</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://caylakpenguen.github.io/rss.xml" rel="subscribe-rss">RSS</a></li>
+</ul>
+
+
+<ul class="main-navigation">
+    <li><a href="http://caylakpenguen.github.io/archives.html">Archives</a></li>
+      <li >
+        <a href="http://caylakpenguen.github.io/category/blog.html">Blog</a>
+      </li>
+      <li class="active">
+        <a href="http://caylakpenguen.github.io/category/misc.html">Misc</a>
+      </li>
+      <li >
+        <a href="http://caylakpenguen.github.io/category/pelican.html">Pelican</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">"Serving multiple Django applications with Nginx and Gunicorn"</h1>
+    <p class="meta">
+<time datetime="2013-10-29T00:00:00+01:00" pubdate>Sal 29 Ekim 2013</time>    </p>
+</header>
+
+  <div class="entry-content"><p>Nginx makes a great server for your Gunicorn-powered Django applications. In this article I will demonstrate how you can run multiple Django applications on the same Nginx server, hosting sites on two different domains. Each application will be set up in its own Virtualenv and each will be owned by and run as a different user to limit consequences of a potential security breach.</p>
+<!-- more -->
+
+<h3>Prerequisites</h3>
+<p>This artcle is a continuation of <a href="/blog/2013/06/09/django-nginx-gunicorn-virtualenv-supervisor/" title="Setting up Django with Nginx, Gunicorn, virtualenv, supervisor and PostgreSQL">a previous article on setting up Django with Nginx and Gunicorn</a>. You should start by following instructions in <a href="/blog/2013/06/09/django-nginx-gunicorn-virtualenv-supervisor/" title="Setting up Django with Nginx, Gunicorn, virtualenv, supervisor and PostgreSQL">that article</a> and prepare a server with the following components:</p>
+<ul>
+<li>Nginx</li>
+<li>PostgreSQL</li>
+<li>Virtualenv</li>
+<li>Supervisor</li>
+</ul>
+<p>Our goal in this article will be to create two applications, one called Hello and one called Goodbye. The former will be served under the address http://hello.test and the latter http://goodbye.test</p>
+<h3>Create a virtual environment for each app</h3>
+<p>In order to keep your apps independent, each will run in its own virtual environment. Create an environment for each application using the <code>virtualenv</code> command. In each environment install Django, Gunicorn, the application itself and its other dependencies. Follow steps described in <a href="/blog/2013/06/09/django-nginx-gunicorn-virtualenv-supervisor/" title="Setting up Django with Nginx, Gunicorn, virtualenv, supervisor and PostgreSQL">my previous article</a> for each app.</p>
+<p>Let's say that for our <code>hello</code> and <code>goodbye</code> applications we would create environments in <code>/webapps/hello_django</code> and <code>/webapps/goodbye_django</code> respectively. We would get a directory structure containing the following entries:</p>
+<div class="highlight"><pre><span></span>/webapps/
+├── hello_django                &lt;= virtualenv for the application Hello
+│   ├── bin
+│   │   ├── activate
+│   │   ├── gunicorn            &lt;= Hello app&#39;s gunicorn
+│   │   ├── gunicorn_start      &lt;= Hello app&#39;s gunicorn start script
+│   │   └── python
+│   ├── hello                   &lt;= Hello app&#39;s Django project directory
+│   │   └── hello
+│   │       ├── settings.py     &lt;= hello.settings
+│   │       └── wsgi.py         &lt;= hello.wsgi
+│   ├── logs                    &lt;= Hello app&#39;s logs will be saved here
+│   ├── media
+│   ├── run                     &lt;= Gunicorn&#39;s socket file will be placed here
+│   └── static
+└── goodbye_django              &lt;= analogous virtualenv for the application Goodbye
+    ├── bin
+    │   ├── activate
+    │   ├── gunicorn
+    │   ├── gunicorn_start
+    │   └── python
+    ├── goodbye
+    │   └── goodbye
+    │       ├── settings.py
+    │       └── wsgi.py
+    ├── logs
+    ├── media
+    ├── run
+    └── static
+</pre></div>
+
+
+<h3>Create system accounts for the webapps</h3>
+<p>Even though Django has a pretty good <a href="http://django.readthedocs.org/en/latest/releases/security.html" title="Archive of Django security issues">security track record</a>, web applications can become compromised. In order to make running multiple applications safer we'll create a separate system user account for each application. The apps will run on our system with the privileges of those special users. Even if one application became compromised, an attacker would only be able to take over the part of your system available to the hacked application.</p>
+<p>Create system users named <code>hello</code> and <code>goodbye</code> and assign them to a system group called <code>webapps</code>.</p>
+<div class="highlight"><pre><span></span>$ sudo groupadd --system webapps
+$ sudo useradd --system --gid webapps --home /webapps/hello_django hello 
+$ sudo useradd --system --gid webapps --home /webapps/goodbye_django goodbye
+</pre></div>
+
+
+<p>Now change the owner of files in each application's folder. I like to assign the group <code>users</code> as the owner, because that allows regular users of the server to access and modify parts of the application which are group-writable. This is optional.</p>
+<div class="highlight"><pre><span></span>$ sudo chown -R hello:users /webapps/hello_django
+$ sudo chown -R goodbye:users /webapps/goodbye_django
+</pre></div>
+
+
+<h3>Create Gunicorn start scripts</h3>
+<p>For each application create a simple shell script based on my <a href="https://gist.github.com/postrational/5747293#file-gunicorn_start-bash" title="gunicorn_start.bash">gunicorn_start</a> template. The scripts differ only in the values of variables which they set. </p>
+<p>For the Hello app, set the following values in <code>/webapps/hello_django/bin/gunicorn_start</code>:</p>
+<p>```bash /webapps/hello_django/bin/gunicorn_start
+(...)
+NAME="hello_app"                                  # Name of the application
+DJANGODIR=/webapps/hello_django/hello             # Django project directory
+SOCKFILE=/webapps/hello_django/run/gunicorn.sock  # we will communicte using this unix socket
+USER=hello                                        # the user to run as
+GROUP=webapps                                     # the group to run as
+NUM_WORKERS=3                                     # how many worker processes should Gunicorn spawn
+DJANGO_SETTINGS_MODULE=hello.settings             # which settings file should Django use
+DJANGO_WSGI_MODULE=hello.wsgi                     # WSGI module name
+(...)</p>
+<div class="highlight"><pre><span></span>And for the Goodbye app by analogy:
+
+```bash /webapps/goodbye_django/bin/gunicorn_start
+(...)
+NAME=&quot;goodbye_app&quot;                                  # Name of the application
+DJANGODIR=/webapps/goodbye_django/goodbye           # Django project directory
+SOCKFILE=/webapps/goodbye_django/run/gunicorn.sock  # we will communicte using this unix socket
+USER=goodbye                                        # the user to run as
+GROUP=webapps                                       # the group to run as
+NUM_WORKERS=3                                       # how many worker processes should Gunicorn spawn
+DJANGO_SETTINGS_MODULE=goodbye.settings             # which settings file should Django use
+DJANGO_WSGI_MODULE=goodbye.wsgi                     # WSGI module name
+(...)
+</pre></div>
+
+
+<h3>Create Supervisor configuration files and start the apps</h3>
+<p>Next, create a Supervisor configuration for each application. Add a file for each app to the <code>/etc/supervisor/conf.d</code> directory.</p>
+<p>One for Hello:</p>
+<p>```ini /etc/supervisor/conf.d/hello.conf
+[program:hello]
+command = /webapps/hello_django/bin/gunicorn_start                    ; Command to start app
+user = hello                                                          ; User to run as
+stdout_logfile = /webapps/hello_django/logs/gunicorn_supervisor.log   ; Where to write log messages
+redirect_stderr = true                                                ; Save stderr in the same log</p>
+<div class="highlight"><pre><span></span>And one for Goodbye:
+
+```ini /etc/supervisor/conf.d/goodbye.conf
+[program:goodbye]
+command = /webapps/goodbye_django/bin/gunicorn_start                    ; Command to start app
+user = goodbye                                                          ; User to run as
+stdout_logfile = /webapps/goodbye_django/logs/gunicorn_supervisor.log   ; Where to write log messages
+redirect_stderr = true                                                  ; Save stderr in the same log
+</pre></div>
+
+
+<p>Reread the configuration files and update Supervisor to start the apps:</p>
+<div class="highlight"><pre><span></span>$ sudo supervisorctl reread
+$ sudo supervisorctl update
+</pre></div>
+
+
+<p>You can also start them manually, if you prefer:</p>
+<div class="highlight"><pre><span></span>$ sudo supervisorctl start hello
+$ sudo supervisorctl start goodbye
+</pre></div>
+
+
+<h3>Create Nginx virtual servers</h3>
+<p>Finally we can create virtual server configurations for each app based on <a href="https://gist.github.com/postrational/5747293#file-hello-nginxconf" title="Nginx virtual server configuration template">this template</a>. These will be stored in <code>/etc/nginx/sites-available</code> and then activated by links in <code>/etc/nginx/sites-enabled</code>.</p>
+<p>```nginx /etc/nginx/sites-available/hello
+upstream hello_app_server {
+  server unix:/webapps/hello_django/run/gunicorn.sock fail_timeout=0;
+}</p>
+<p>server {
+    listen   80;
+    server_name hello.test;</p>
+<div class="highlight"><pre><span></span><span class="nt">client_max_body_size</span> <span class="nt">4G</span><span class="o">;</span>
+
+<span class="nt">access_log</span> <span class="o">/</span><span class="nt">webapps</span><span class="o">/</span><span class="nt">hello_django</span><span class="o">/</span><span class="nt">logs</span><span class="o">/</span><span class="nt">nginx-access</span><span class="p">.</span><span class="nc">log</span><span class="o">;</span>
+<span class="nt">error_log</span> <span class="o">/</span><span class="nt">webapps</span><span class="o">/</span><span class="nt">hello_django</span><span class="o">/</span><span class="nt">logs</span><span class="o">/</span><span class="nt">nginx-error</span><span class="p">.</span><span class="nc">log</span><span class="o">;</span>
+
+<span class="nt">location</span> <span class="o">/</span><span class="nt">static</span><span class="o">/</span> <span class="p">{</span>
+    <span class="err">alias</span>   <span class="err">/webapps/hello_django/static/</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">location</span> <span class="o">/</span><span class="nt">media</span><span class="o">/</span> <span class="p">{</span>
+    <span class="err">alias</span>   <span class="err">/webapps/hello_django/media/</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">location</span> <span class="o">/</span> <span class="p">{</span>
+    <span class="err">proxy_set_header</span> <span class="err">X-Forwarded-For</span> <span class="err">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+    <span class="err">proxy_set_header</span> <span class="err">Host</span> <span class="err">$http_host</span><span class="p">;</span>
+    <span class="err">proxy_redirect</span> <span class="err">off</span><span class="p">;</span>
+    <span class="err">if</span> <span class="err">(!-f</span> <span class="err">$request_filename)</span> <span class="err">{</span>
+        <span class="err">proxy_pass</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">hello_app_server</span><span class="p">;</span>
+        <span class="err">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="err">}</span>
+</pre></div>
+
+
+<p>}</p>
+<div class="highlight"><pre><span></span><span class="err">```</span><span class="nt">nginx</span> <span class="o">/</span><span class="nt">etc</span><span class="o">/</span><span class="nt">nginx</span><span class="o">/</span><span class="nt">sites-available</span><span class="o">/</span><span class="nt">goodbye</span>
+<span class="nt">upstream</span> <span class="nt">goodbye_app_server</span> <span class="p">{</span>
+  <span class="err">server</span> <span class="n">unix</span><span class="p">:</span><span class="o">/</span><span class="n">webapps</span><span class="o">/</span><span class="n">goodbye_django</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">gunicorn</span><span class="o">.</span><span class="n">sock</span> <span class="n">fail_timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">server</span> <span class="p">{</span>
+    <span class="err">listen</span>   <span class="err">80</span><span class="p">;</span>
+    <span class="err">server_name</span> <span class="err">goodbye.test</span><span class="p">;</span>
+
+    <span class="err">client_max_body_size</span> <span class="err">4G</span><span class="p">;</span>
+
+    <span class="err">access_log</span> <span class="err">/webapps/goodbye_django/logs/nginx-access.log</span><span class="p">;</span>
+    <span class="err">error_log</span> <span class="err">/webapps/goodbye_django/logs/nginx-error.log</span><span class="p">;</span>
+
+    <span class="err">location</span> <span class="err">/static/</span> <span class="err">{</span>
+        <span class="err">alias</span>   <span class="err">/webapps/goodbye_django/static/</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">location</span> <span class="o">/</span><span class="nt">media</span><span class="o">/</span> <span class="p">{</span>
+        <span class="err">alias</span>   <span class="err">/webapps/goodbye_django/media/</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">location</span> <span class="o">/</span> <span class="p">{</span>
+        <span class="err">proxy_set_header</span> <span class="err">X-Forwarded-For</span> <span class="err">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+        <span class="err">proxy_set_header</span> <span class="err">Host</span> <span class="err">$http_host</span><span class="p">;</span>
+        <span class="err">proxy_redirect</span> <span class="err">off</span><span class="p">;</span>
+        <span class="err">if</span> <span class="err">(!-f</span> <span class="err">$request_filename)</span> <span class="err">{</span>
+            <span class="err">proxy_pass</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">goodbye_app_server</span><span class="p">;</span>
+            <span class="err">break</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="err">}</span>
+<span class="err">}</span>
+</pre></div>
+
+
+<p>Enable the virtual servers and restart Nginx:</p>
+<div class="highlight"><pre><span></span>$ sudo ln -s /etc/nginx/sites-available/hello /etc/nginx/sites-enabled/hello
+$ sudo ln -s /etc/nginx/sites-available/goodbye /etc/nginx/sites-enabled/goodbye
+$ sudo service nginx restart
+</pre></div>
+
+
+<h3>Test the virtual servers</h3>
+<p>Now let's point each domain to our server for testing purposes. Making actual changes to the Domain Name System is usually among the final steps when working in production, performed after all tests are completed. For testing you can simulate the DNS changes by adding an entry to the <code>/etc/hosts</code> file of a computer from which you will be connecting to your server (your laptop for example).</p>
+<p>Say you want to serve Django applications under the domains <code>hello.test</code> and <code>goodbye.test</code> from a server with the IP address of <code>10.10.10.200</code>. You can simulate the appropriate DNS entries locally on your PC by putting the following line into your <code>/etc/hosts</code> file. On Windows the file is <a href="http://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system" title="hosts (file) Location in the file system - Wikipedia">conveniently hidden</a> in <code>%SystemRoot%\system32\drivers\etc\hosts</code>.</p>
+<p><code>text /etc/hosts
+(...)
+10.10.10.200    hello.test goodbye.test</code></p>
+<p>You can now navigate to each domain from your PC to test that each app on the server is working correctly:</p>
+<ul>
+<li>http://hello.test</li>
+<li>http://goodbye.test</li>
+</ul>
+<p>Good luck!</p></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        caylak
+    </span>
+  </span>
+<time datetime="2013-10-29T00:00:00+01:00" pubdate>Sal 29 Ekim 2013</time>  <span class="categories">
+    <a class='category' href='http://caylakpenguen.github.io/category/misc.html'>misc</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="http://caylakpenguen.github.io/tag/django-nginx-gunicorn-virtualenv-supervisord.html">django nginx gunicorn virtualenv supervisord</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="http://caylakpenguen.github.io/pelican-a-gecis.html">Pelican'a geçiş</a>
+      </li>
+      <li class="post">
+          <a href="http://caylakpenguen.github.io/sublime-text.html">Sublime Text</a>
+      </li>
+      <li class="post">
+          <a href="http://caylakpenguen.github.io/about.html">About - Ben Kimim</a>
+      </li>
+      <li class="post">
+          <a href="http://caylakpenguen.github.io/my-first-post-with-pelican-octopress-theme.html">My first post with pelican octopress theme</a>
+      </li>
+      <li class="post">
+          <a href="http://caylakpenguen.github.io/serving-multiple-django-applications-with-nginx-and-gunicorn.html">"Serving multiple Django applications with Nginx and Gunicorn"</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="http://caylakpenguen.github.io/category/blog.html">blog</a></li>
+        <li><a href="http://caylakpenguen.github.io/category/misc.html">misc</a></li>
+        <li><a href="http://caylakpenguen.github.io/category/pelican.html">pelican</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="http://caylakpenguen.github.io/tag/pelican.html">pelican</a>,    <a href="http://caylakpenguen.github.io/tag/python.html">python</a>,    <a href="http://caylakpenguen.github.io/tag/sublime-text.html">sublime text</a>,    <a href="http://caylakpenguen.github.io/tag/blog.html">blog</a>,    <a href="http://caylakpenguen.github.io/tag/django-nginx-gunicorn-virtualenv-supervisord.html">django nginx gunicorn virtualenv supervisord</a>,    <a href="http://caylakpenguen.github.io/tag/text-editor.html">text editor</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="http://caylakpenguen.github.io/rss.xml" type="application/rss+xml" rel="alternate">RSS</a></li>
+            <li><a href="http://twitter.com/caylakpenguen" target="_blank">twitter</a></li>
+            <li><a href="http://flickr.com/" target="_blank">flickr</a></li>
+            <li><a href="http://facebook.com/" target="_blank">facebook</a></li>
+            <li><a href="http://github.com/caylakpenguen" target="_blank">github</a></li>
+            <li><a href="https://plus.google.com/" target="_blank">google-plus</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://www.truvalinux.org.tr/" target="_blank">Truva Linux</a></li>
+            <li><a href="http://getgnu.org/" target="_blank">getGNU</a></li>
+            <li><a href="http://caylak.truvalinux.org.tr" target="_blank">Caylak Blog</a></li>
+            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+            <li><a href="#" target="_blank">You can modify those links in your config file</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright &copy;  2013&ndash;2016  caylak &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+  <span class="credit">Powered by <a href="https://github.com/duilio/pelican-octopress-theme">Octopress Theme for Pelican</a></span>
+</p></footer>
+  <script src="http://caylakpenguen.github.io/theme/js/modernizr-2.0.js"></script>
+  <script src="http://caylakpenguen.github.io/theme/js/ender.js"></script>
+  <script src="http://caylakpenguen.github.io/theme/js/octopress.js" type="text/javascript"></script>
+</body>
+</html>
